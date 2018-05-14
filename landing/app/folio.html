@@ -59,12 +59,12 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-									<p class="panel_title">Пункт Группы Свертывания #1</p>
+									<p class="panel_title">Ногтевая эстетика</p>
 									<p class="to_price"><a href="/price.html">$</a></p>
 								</a>
 								</h4>
 							</div>
-							<div id="collapseOne" class="panel-collapse collapse in">
+							<div id="collapseOne" class="panel-collapse collapse">
 								<div class="panel-body">
 									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
 									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
@@ -77,7 +77,7 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-									<p class="panel_title">Пункт Группы Свертывания #2</p>
+									<p class="panel_title">Ресничный мастер</p>
 									<p class="to_price"><a href="/price.html">$</a></p>
 								</a>
 								</h4>
@@ -95,7 +95,7 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-									<p class="panel_title">Пункт Группы Свертывания #3</p>
+									<p class="panel_title">Парикмахерские услуги</p>
 									<p class="to_price"><a href="/price.html">$</a></p>
 								</a>
 								</h4>
@@ -113,7 +113,7 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-									<p class="panel_title">Пункт Группы Свертывания #4</p>
+									<p class="panel_title">Услуги массажиста</p>
 									<p class="to_price"><a href="/price.html">$</a></p>
 								</a>
 								</h4>
@@ -130,6 +130,11 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="button_bl call_modal">
+			<button class="btn btn-default btn-lg light_btn" data-toggle="modal" data-target="#myModal">
+			Lorem.
+			</button>
 		</div>
 		<div class="review wrapper" id="review">
 			<div class="inner container">
@@ -187,6 +192,41 @@
 				<a href="#">22</a>
 				<a href="#">22</a>
 				<a href="#">22</a>
+			</div>
+		</div>
+		<div class="modal_bl">
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<!-- FORM BLOCK -->
+							<div class="form_block">
+								<form action="">
+									<div class="user_name_bl">
+										<label for="user_name">Name</label>
+										<div class="user_input">
+											<input type="text" placeholder="Name" name="user_name" pattern="${{common.userName}}$" required >
+										</div>
+									</div>
+									<div class="user_phone_bl">
+										<label for="user_phone">Phone</label>
+										<div class="user_input">
+											<input type="tel" class="user_phone" data-inputmask="'mask': '+38(099) 999-99-99'" placeholder="Phone" name="user_phone" pattern="^[0-9-+s()\s]*$" required>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="button_bl">
+								<button class="btn-lg light_btn" for="">Lorem</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- scripts -->

@@ -17,7 +17,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="header wrapper">
+		<div class="header wrapper" id="top">
 			<!-- HEADER -->
 			<div class="inner container">
 				<div class="row">
@@ -39,8 +39,8 @@
 						</div>
 						<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 							<ul class="nav navbar-nav nav_header">
-								<li class="active"><a href="#about">${{common.aboutLink}}$</a></li>
-								<li><a class="scroll" href="/folio.html">${{common.folioLink}}$</a></li>
+								<li class="active"><a class="scroll" href="#about">${{common.aboutLink}}$</a></li>
+								<li><a class="scroll" href="#folio">${{common.folioLink}}$</a></li>
 								<li><a class="scroll" href="/price.html">${{common.priceLink}}$</a></li>
 								<li><a class="scroll" href="/shop.html">${{common.shopLink}}$</a></li>
 								<li><a class="scroll" href="#review">${{common.reviewsLink}}$</a></li>
@@ -137,7 +137,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="folio wrapper">
+		<div class="folio wrapper" id="folio">
 			<div class="inner container">
 				<div class="row">
 					<h2>Lorem.</h2>
@@ -146,7 +146,7 @@
 							<div class="serv_info">
 								<div>
 									<h2>Lorem ipsum.</h2>
-									<a href="#">link...</a>
+									<a href="folio.html">link...</a>
 								</div>
 							</div>
 						</div>
@@ -156,7 +156,7 @@
 							<div class="serv_info">
 								<div>
 									<h2>Lorem ipsum.</h2>
-									<a href="#">link...</a>
+									<a href="/folio.html">link...</a>
 								</div>
 							</div>
 						</div>
@@ -166,7 +166,7 @@
 							<div class="serv_info">
 								<div>
 									<h2>Lorem ipsum.</h2>
-									<a href="#">link...</a>
+									<a href="/folio.html">link...</a>
 								</div>
 							</div>
 						</div>
@@ -176,7 +176,7 @@
 							<div class="serv_info">
 								<div>
 									<h2>Lorem ipsum.</h2>
-									<a href="#">link...</a>
+									<a href="/folio.html">link...</a>
 								</div>
 							</div>
 						</div>
@@ -268,6 +268,7 @@
 				<a href="#">22</a>
 			</div>
 		</div>
+		${{common.topBtn}}$
 		<!-- scripts -->
 		${{common.urlJs}}$
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlgAOsKbAIb9CgqoeHpqmZ6fzyV1OYJEA&callback=initMap" type="text/javascript"></script>

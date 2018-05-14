@@ -9,6 +9,8 @@ body {
 .wrapper {
   position: relative;
   padding-top: 72px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .inner {
@@ -23,6 +25,7 @@ body {
 // LOGOS ===================================
 .logo_header {
   float: none;
+  width: 350px;
 
   @include m-x-auto;
 
@@ -59,6 +62,12 @@ body {
 
 .txt_100 {
   text-align: center;
+}
+
+.italic {
+  display: block;
+  font-style: italic;
+  font-weight: normal;
 }
 
 // TITLES ===================================
@@ -113,7 +122,16 @@ nav.navbar {
   z-index: 1;
 }
 
-// FORMS ===================================
+.top_btn_bl {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px;
+  background-color: #fff;
+  outline: 1px solid #000;
+  z-index: 2;
+}
+
 .form_block {
   width: 100%;
   max-width: 450px;
@@ -230,6 +248,8 @@ nav.navbar {
   }
 
   .panel-body {
+    height: 500px;
+
     img {
       margin-bottom: 30px;
     }
@@ -287,12 +307,6 @@ nav.navbar {
         padding-bottom: 15px;
         font-weight: bold;
         position: relative;
-
-        .italic {
-          display: block;
-          font-style: italic;
-          font-weight: normal;
-        }
       }
 
       .service_price {
@@ -312,6 +326,7 @@ nav.navbar {
 
 // MARKERS ===================================
 .service_bl {
+  // span.class = first child of service_bl
   .new,
   .sale,
   .info {

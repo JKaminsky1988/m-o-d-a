@@ -23,4 +23,7 @@ module.exports = {
 
     // contacts
     adress: '<p>вул. Є. Чавдар, 12</p>\n                            <p>ст. м. Осокорки</p>\n                            <p>тел.: <a href="tel:+380503876351">+38(050) 387-63-51</a></p>',
+
+    // top button
+    topBtn: '<div class="top_btn_bl"><a class="scroll" href="#top">top</a></div>',
 };

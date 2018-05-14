@@ -3,7 +3,9 @@ body {
 
 .wrapper {
   position: relative;
-  padding-top: 72px; }
+  padding-top: 72px;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .inner {
   width: 100%;
@@ -16,6 +18,7 @@ body {
 
 .logo_header {
   float: none;
+  width: 350px;
   margin-left: auto;
   margin-right: auto; }
   .logo_header a {
@@ -44,6 +47,11 @@ body {
 
 .txt_100 {
   text-align: center; }
+
+.italic {
+  display: block;
+  font-style: italic;
+  font-weight: normal; }
 
 h1, h2, h3 {
   text-align: center; }
@@ -80,6 +88,15 @@ nav.navbar {
   top: 8px;
   right: 15px;
   z-index: 1; }
+
+.top_btn_bl {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 10px;
+  background-color: #fff;
+  outline: 1px solid #000;
+  z-index: 2; }
 
 .form_block {
   width: 100%;
@@ -155,8 +172,10 @@ nav.navbar {
 .gallery .to_price {
   float: right;
   margin-bottom: 0; }
-.gallery .panel-body img {
-  margin-bottom: 30px; }
+.gallery .panel-body {
+  height: 500px; }
+  .gallery .panel-body img {
+    margin-bottom: 30px; }
 
 .price .panel-default > .panel-heading::after {
   content: "";
@@ -191,10 +210,6 @@ nav.navbar {
     padding-bottom: 15px;
     font-weight: bold;
     position: relative; }
-    .price .panel-body .service_bl .service_name .italic {
-      display: block;
-      font-style: italic;
-      font-weight: normal; }
   .price .panel-body .service_bl .service_price {
     padding-bottom: 30px; }
     .price .panel-body .service_bl .service_price::after {
