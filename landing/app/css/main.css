@@ -196,28 +196,32 @@ nav.navbar {
 .price .to_gallery {
   float: right;
   margin-bottom: 0; }
-.price .panel-body .price_title {
-  text-align: center;
-  margin-bottom: 30px; }
-.price .panel-body .service_bl {
-  position: relative; }
-  .price .panel-body .service_bl .service_name,
-  .price .panel-body .service_bl .service_price {
-    text-align: center; }
-  .price .panel-body .service_bl .service_name {
-    padding-top: 30px;
-    border-top: 1px solid #000;
-    padding-bottom: 15px;
-    font-weight: bold;
+.price .panel-body {
+  padding-top: 30px;
+  max-height: 500px;
+  overflow: auto; }
+  .price .panel-body .price_title {
+    text-align: center;
+    margin-bottom: 30px; }
+  .price .panel-body .service_bl {
     position: relative; }
-  .price .panel-body .service_bl .service_price {
-    padding-bottom: 30px; }
-    .price .panel-body .service_bl .service_price::after {
-      content: "";
-      display: block;
-      clear: both; }
-    .price .panel-body .service_bl .service_price p .price {
-      display: block; }
+    .price .panel-body .service_bl .service_name,
+    .price .panel-body .service_bl .service_price {
+      text-align: center; }
+    .price .panel-body .service_bl .service_name {
+      padding-top: 30px;
+      border-top: 1px solid #000;
+      padding-bottom: 15px;
+      font-weight: bold;
+      position: relative; }
+    .price .panel-body .service_bl .service_price {
+      padding-bottom: 30px; }
+      .price .panel-body .service_bl .service_price::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .price .panel-body .service_bl .service_price p .price {
+        display: block; }
 
 .service_bl .new,
 .service_bl .sale,
@@ -243,12 +247,16 @@ span.description {
   position: relative; }
   span.description[aria-label]:hover::after {
     content: attr(aria-label);
-    width: 200px;
+    width: 300px;
     position: absolute;
     bottom: 22px;
     left: 50%;
-    transform: translateX(-100px);
+    transform: translateX(-150px);
     display: block;
     background-color: #DB3;
     padding: 10px 15px;
     z-index: 2; }
+
+.service_bl:first-child .service_name span.description[aria-label]:hover::after {
+  top: 22px;
+  bottom: auto; }
