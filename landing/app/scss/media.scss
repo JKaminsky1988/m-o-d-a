@@ -1,0 +1,98 @@
+@import "variables";
+@import "mixins";
+
+@media (min-width: 768px) {
+  // CONTAINERS ===================================
+  .wrapper {
+    padding-top: 0;
+  }
+
+  .col-lg-2_5 {
+    float: left;
+    width: (100% / 5);
+  }
+
+  // LOGOS ===================================
+  .logo_footer {
+    float: none;
+
+    @include m-x-auto;
+  }
+
+  // TEXT ===================================
+  .txt_100 {
+    &:nth-child(odd) {
+      padding-right: 45px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 45px;
+    }
+  }
+
+  // TITLES ===================================
+
+  // NAVIGATION ===================================
+  nav.navbar {
+    position: relative;
+  }
+
+  .nav_header {
+    li {
+      width: (100% / 6);
+    }
+  }
+
+  // BUTTONS ===================================
+
+  // FORMS ===================================
+
+  // FOLIO ===================================
+
+  // CAROUSEL ===================================
+  .bxslider {
+    .rewiev_slide {
+      text-align: center;
+    }
+
+    img {
+      width: 30%;
+      display: inline-block;
+    }
+
+    .rewiev_txt {
+      width: 70%;
+      display: inline-block;
+    }
+  }
+
+  //FOOTER ===================================
+  .footer {
+    min-height: 500px;
+
+    .inner {
+      min-height: 500px;
+    }
+
+    #map {
+      overflow: hidden;
+      width: 100%;
+      height: 500px;
+      position: absolute !important;
+      z-index: 2;
+      top: 0px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .contacts {
+      min-height: 500px;
+      z-index: 3;
+
+      .contacts_info {
+        float: none;
+      }
+    }
+  }
+}

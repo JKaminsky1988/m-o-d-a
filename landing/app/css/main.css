@@ -1,0 +1,239 @@
+body {
+  min-width: 320px; }
+
+.wrapper {
+  position: relative;
+  padding-top: 72px; }
+
+.inner {
+  width: 100%;
+  max-width: 1140px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.logo_header {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+  .logo_header a {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    background-image: url(../img/test-img.png);
+    background-size: contain; }
+
+.logo_footer {
+  width: 100px;
+  float: left; }
+  .logo_footer a {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    background-image: url(../img/test-img.png);
+    background-size: contain; }
+
+.hello_txt {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.txt_100 {
+  text-align: center; }
+
+h1, h2, h3 {
+  text-align: center; }
+
+h2 span {
+  display: block; }
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; }
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px; }
+
+.nav_header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .nav_header li {
+    text-align: center;
+    width: 100%; }
+
+.button_bl .light_btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.lang_btn_bl {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  z-index: 1; }
+
+.form_block {
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.servise .serv_bg {
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background-image: url(../img/test-img.png); }
+  .servise .serv_bg .serv_info {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
+    .servise .serv_bg .serv_info > div {
+      position: absolute;
+      bottom: 20px;
+      width: 100%; }
+      .servise .serv_bg .serv_info > div h2 {
+        text-align: center; }
+      .servise .serv_bg .serv_info > div a {
+        display: block;
+        text-align: center; }
+  .servise .serv_bg:hover .serv_info {
+    display: block; }
+
+.bxslider {
+  overflow: hidden; }
+  .bxslider img {
+    max-width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+  .bxslider .rewiev_txt {
+    text-align: center; }
+  .bxslider a {
+    display: block;
+    text-align: center; }
+
+.footer {
+  position: relative;
+  overflow: hidden; }
+  .footer #map {
+    min-height: 320px;
+    overflow: hidden;
+    position: relative; }
+  .footer .contacts {
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center; }
+    .footer .contacts .contacts_info {
+      display: inline-block; }
+
+.social {
+  height: 65px;
+  text-align: center; }
+  .social a {
+    line-height: 65px; }
+
+.gallery .panel-heading::after {
+  content: "";
+  display: block;
+  clear: both; }
+.gallery .panel_title {
+  float: left;
+  margin-bottom: 0; }
+.gallery .to_price {
+  float: right;
+  margin-bottom: 0; }
+.gallery .panel-body img {
+  margin-bottom: 30px; }
+
+.price .panel-default > .panel-heading::after {
+  content: "";
+  display: block;
+  clear: both; }
+.price .panel-default > .panel-heading.master1 {
+  background-color: transparent;
+  background-image: none; }
+.price .panel-default > .panel-heading.master3 {
+  background-color: transparent;
+  background-image: none; }
+.price .panel-default > .panel-heading.master5 {
+  background-color: transparent;
+  background-image: none; }
+.price .panel_title {
+  float: left;
+  margin-bottom: 0; }
+.price .to_gallery {
+  float: right;
+  margin-bottom: 0; }
+.price .panel-body .price_title {
+  text-align: center;
+  margin-bottom: 30px; }
+.price .panel-body .service_bl {
+  position: relative; }
+  .price .panel-body .service_bl .service_name,
+  .price .panel-body .service_bl .service_price {
+    text-align: center; }
+  .price .panel-body .service_bl .service_name {
+    padding-top: 30px;
+    border-top: 1px solid #000;
+    padding-bottom: 15px;
+    font-weight: bold;
+    position: relative; }
+    .price .panel-body .service_bl .service_name .italic {
+      display: block;
+      font-style: italic;
+      font-weight: normal; }
+  .price .panel-body .service_bl .service_price {
+    padding-bottom: 30px; }
+    .price .panel-body .service_bl .service_price::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .price .panel-body .service_bl .service_price p .price {
+      display: block; }
+
+.service_bl .new,
+.service_bl .sale,
+.service_bl .info {
+  position: absolute;
+  top: 1px;
+  width: 36px;
+  padding: 5px;
+  text-align: center; }
+.service_bl .new {
+  background-color: pink;
+  left: 15px; }
+.service_bl .sale {
+  background-color: #FFDD00;
+  left: 15px; }
+.service_bl .info {
+  background-color: #7FFFD4;
+  right: 15px; }
+
+span.description {
+  font-style: italic;
+  font-weight: bold;
+  position: relative; }
+  span.description[aria-label]:hover::after {
+    content: attr(aria-label);
+    width: 200px;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-100px);
+    display: block;
+    background-color: #DB3;
+    padding: 10px 15px;
+    z-index: 2; }

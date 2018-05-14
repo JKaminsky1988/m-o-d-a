@@ -1,0 +1,42 @@
+{
+  "name": "moda",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "jquery-mask-plugin": "^1.14.15"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.3",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csslint": "^1.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-i18n": "^0.9.0",
+    "gulp-htmlhint": "^1.0.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-i18n-localize": "^1.2.7",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minifier": "^1.2.1",
+    "gulp-minify-inline": "^1.0.0",
+    "gulp-remove-html-comments": "^1.0.1",
+    "gulp-scss": "^1.4.0",
+    "gulp-sort": "^2.0.0",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglify": "^3.0.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.favorit:frontend/betinvest_www.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

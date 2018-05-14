@@ -1,0 +1,361 @@
+@import "variables";
+@import "mixins";
+
+// CONTAINERS ===================================
+body {
+  min-width: 320px;
+}
+
+.wrapper {
+  position: relative;
+  padding-top: 72px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1140px;
+  position: relative;
+
+  @include p-x-15;
+  @include m-x-auto;
+}
+
+// LOGOS ===================================
+.logo_header {
+  float: none;
+
+  @include m-x-auto;
+
+  a {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    background-image: url(../img/test-img.png);
+    background-size: contain;
+  }
+}
+
+.logo_footer {
+  width: 100px;
+  float: left;
+
+  a {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    background-image: url(../img/test-img.png);
+    background-size: contain;
+  }
+}
+
+// TEXT ===================================
+.hello_txt {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+
+  @include m-x-auto;
+}
+
+.txt_100 {
+  text-align: center;
+}
+
+// TITLES ===================================
+h1, h2, h3 {
+  text-align: center;
+}
+
+h2 {
+  span {
+    display: block;
+  }
+}
+
+// NAVIGATION ===================================
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+.nav_header {
+  width: 100%;
+
+  @include m-x-auto;
+
+  li {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+// BUTTONS ===================================
+.button_bl {
+  .light_btn {
+    display: block;
+
+    @include m-x-auto;
+  }
+}
+
+.lang_btn_bl {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  z-index: 1;
+}
+
+// FORMS ===================================
+.form_block {
+  width: 100%;
+  max-width: 450px;
+
+  @include m-x-auto;
+}
+
+// FOLIO ===================================
+.servise {
+  .serv_bg {
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-image: url(../img/test-img.png);
+
+    .serv_info {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+
+      > div {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+
+        h2 {
+          text-align: center;
+        }
+
+        a {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+
+    &:hover .serv_info {
+      display: block;
+    }
+  }
+}
+
+// CAROUSEL ===================================
+.bxslider {
+  overflow: hidden;
+
+  img {
+    max-width: 200px;
+    height: 200px;
+
+    @include m-x-auto;
+  }
+
+  .rewiev_txt {
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+  }
+}
+
+//FOOTER ===================================
+.footer {
+  position: relative;
+  overflow: hidden;
+
+  #map {
+    min-height: 320px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .contacts {
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+
+    .contacts_info {
+      display: inline-block;
+    }
+  }
+}
+
+// social
+.social {
+  height: 65px;
+  text-align: center;
+
+  a {
+    line-height: 65px;
+  }
+}
+
+// FOLIO ===================================
+.gallery {
+  .panel-heading {
+    @include clean;
+  }
+
+  .panel_title {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .to_price {
+    float: right;
+    margin-bottom: 0;
+  }
+
+  .panel-body {
+    img {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// PRICE ===================================
+.price {
+  .panel-default > .panel-heading {
+    @include clean;
+
+    &.master1 {
+      background-color: transparent;
+      background-image: none;
+    }
+
+    &.master3 {
+      background-color: transparent;
+      background-image: none;
+    }
+
+    &.master5 {
+      background-color: transparent;
+      background-image: none;
+    }
+  }
+
+  .panel_title {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .to_gallery {
+    float: right;
+    margin-bottom: 0;
+  }
+
+  .panel-body {
+    .price_title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .service_bl {
+      position: relative;
+
+      .service_name,
+      .service_price {
+        text-align: center;
+      }
+
+      .service_name {
+        padding-top: 30px;
+        border-top: 1px solid #000;
+        padding-bottom: 15px;
+        font-weight: bold;
+        position: relative;
+
+        .italic {
+          display: block;
+          font-style: italic;
+          font-weight: normal;
+        }
+      }
+
+      .service_price {
+        padding-bottom: 30px;
+
+        @include clean;
+
+        p {
+          .price {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MARKERS ===================================
+.service_bl {
+  .new,
+  .sale,
+  .info {
+    position: absolute;
+    top: 1px;
+    width: 36px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .new {
+    background-color: pink;
+    left: 15px;
+  }
+
+  .sale {
+    background-color: #FFDD00;
+    left: 15px;
+  }
+
+  .info {
+    background-color: #7FFFD4;
+    right: 15px;
+  }
+}
+
+// description
+span.description {
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+
+  &[aria-label]:hover {
+    &::after {
+      content: attr(aria-label);
+      width: 200px;
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-100px);
+      display: block;
+      background-color: #DB3;
+      padding: 10px 15px;
+      z-index: 2;
+    }
+  }
+}
