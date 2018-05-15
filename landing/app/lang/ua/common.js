@@ -11,6 +11,9 @@ module.exports = {
 
     localLangTo: 'ru',
 
+    // titles ========================================
+    h1: 'Красивою бути мо<span class="d_letter">d</span>но',
+
     // menu ========================================
     aboutLink: 'про нас',
     folioLink: 'галерея',

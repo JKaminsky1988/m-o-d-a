@@ -11,6 +11,8 @@ module.exports = {
 
     localLangTo: 'ua',
 
+    // titles ========================================
+    h1: 'Красивой быть мо<span class="d_letter">d</span>но',
 
     // menu
     aboutLink: 'о нас',

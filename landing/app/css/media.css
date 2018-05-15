@@ -13,6 +13,9 @@
   .txt_100:nth-child(even) {
     padding-left: 45px; }
 
+  .bold {
+    font-weight: bold; }
+
   h1, h2, h3 {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -24,9 +27,15 @@
       top: 0;
       left: 0;
       right: 0; }
+    nav.navbar .container-fluid,
+    nav.navbar .navbar-collapse {
+      padding-left: 0;
+      padding-right: 0; }
 
-  .nav_header li {
-    width: 16.6666666667%; }
+  .navbar-default .nav_header {
+    padding-right: 0; }
+    .navbar-default .nav_header li {
+      width: 16.6666666667%; }
 
   .bxslider .rewiev_slide {
     text-align: center; }

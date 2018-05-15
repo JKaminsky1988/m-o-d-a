@@ -30,6 +30,10 @@
     }
   }
 
+  .bold {
+    font-weight: bold;
+  }
+
   // TITLES ===================================
   h1, h2, h3 {
     margin-top: 30px;
@@ -46,9 +50,17 @@
       left: 0;
       right: 0;
     }
+
+    .container-fluid,
+    .navbar-collapse {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
-  .nav_header {
+  .navbar-default .nav_header {
+    padding-right: 0;
+
     li {
       width: (100% / 6);
     }
