@@ -8,6 +8,11 @@
   padding-right: 15px;
 }
 
+@mixin p-y-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 @mixin clean {
   &::after {
     content: "";

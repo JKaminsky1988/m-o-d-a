@@ -5,20 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Document</title>
 		${{common.urlCss}}$
-		<script src="js/jquery.min.js"></script>
 	</head>
 	<body class="${{common.localLang}}$">
 		<!-- LANG BUTTON -->
 		<div class="lang_btn_bl">
-			<div class="btn-group">
-				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">${{common.localLang}}$ <span class="caret"></span></button>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="/${{common.localLangTo}}$/">${{common.localLangTo}}$</a></li>
-				</ul>
-			</div>
+			${{common.langBtn}}$
 		</div>
+		<!-- HEADER -->
 		<div class="header wrapper" id="top">
-			<!-- HEADER -->
 			<div class="inner container">
 				<div class="row">
 					<div class="logo_header col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -27,59 +21,40 @@
 				</div>
 				<h1>Lorem ipsum dolor.</h1>
 				<!-- NAVBAR COMPONENT -->
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							</button>
+				<div class="nav_bl">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+								<ul class="nav navbar-nav nav_header">
+									<li><a class="scroll" href="#about">${{common.aboutLink}}$</a></li>
+									<li><a class="scroll" href="#folio">${{common.folioLink}}$</a></li>
+									<li><a class="scroll" href="/price.html">${{common.priceLink}}$</a></li>
+									<li><a class="scroll" href="/shop.html">${{common.shopLink}}$</a></li>
+									<li><a class="scroll" href="#review">${{common.reviewsLink}}$</a></li>
+									<li><a class="scroll" href="#contact">${{common.contactsLink}}$</a></li>
+								</ul>
+							</div>
 						</div>
-						<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-							<ul class="nav navbar-nav nav_header">
-								<li class="active"><a class="scroll" href="#about">${{common.aboutLink}}$</a></li>
-								<li><a class="scroll" href="#folio">${{common.folioLink}}$</a></li>
-								<li><a class="scroll" href="/price.html">${{common.priceLink}}$</a></li>
-								<li><a class="scroll" href="/shop.html">${{common.shopLink}}$</a></li>
-								<li><a class="scroll" href="#review">${{common.reviewsLink}}$</a></li>
-								<li><a class="scroll" href="#contact">${{common.contactsLink}}$</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</div>
-		<div class="about wrapper" id="about">
-			<!-- about -->
-			<div class="inner container">
+					</nav>
+				</div>
+				<!-- about -->
 				<div class="row">
-					<p class="hello_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, laborum perferendis provident rerum pariatur sed facilis repellat veniam aspernatur adipisci. Aliquam explicabo dignissimos deserunt assumenda corrupti! Sapiente dicta, nisi dolores! Inventore modi id, excepturi consectetur, distinctio nobis est, accusamus, libero dolore ab quis. Asperiores quasi harum adipisci saepe, ad omnis debitis ratione. Voluptatum veritatis voluptatibus natus quasi amet excepturi doloribus.</p>
-					<!-- FORM BLOCK -->
-					<div class="form_block">
-						<form action="">
-							<div class="user_name_bl">
-								<label for="user_name">Name</label>
-								<div class="user_input">
-									<input type="text" placeholder="Name" name="user_name" pattern="${{common.userName}}$" required >
-								</div>
-							</div>
-							<div class="user_phone_bl">
-								<label for="user_phone">Phone</label>
-								<div class="user_input">
-									<input type="tel" class="user_phone" data-inputmask="'mask': '+38(099) 999-99-99'" placeholder="Phone" name="user_phone" pattern="^[0-9-+s()\s]*$" required>
-								</div>
-							</div>
-							<div class="button_bl">
-								<button class="btn-lg light_btn">Lorem</button>
-							</div>
-						</form>
+					<p class="hello_txt">${{index.helloTxt}}$</p>
+					<div class="button_bl">
+						<a href="#form" class="data_send_btn scroll">Lorem</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="benefits wrapper">
+		<div class="benefits wrapper" id="about">
 			<!-- benefits -->
 			<div class="inner container">
 				<div class="row">
@@ -115,25 +90,7 @@
 			<div class="inner container">
 				<div class="row">
 					<!-- FORM BLOCK -->
-					<div class="form_block">
-						<form action="">
-							<div class="user_name_bl">
-								<label for="user_name">Name</label>
-								<div class="user_input">
-									<input type="text" placeholder="Name" name="user_name" pattern="${{common.userName}}$" required >
-								</div>
-							</div>
-							<div class="user_phone_bl">
-								<label for="user_phone">Phone</label>
-								<div class="user_input">
-									<input type="tel" class="user_phone" data-inputmask="'mask': '+38(099) 999-99-99'" placeholder="Phone" name="user_phone" pattern="^[0-9-+s()\s]*$" required>
-								</div>
-							</div>
-							<div class="button_bl">
-								<button class="btn-lg light_btn">Lorem</button>
-							</div>
-						</form>
-					</div>
+					<div class="form_block">${{common.form}}$</div>
 				</div>
 			</div>
 		</div>
@@ -184,29 +141,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="form wrapper">
+		<div class="form wrapper" id="form">
 			<div class="inner container">
 				<div class="row">
 					<!-- FORM BLOCK -->
-					<div class="form_block">
-						<form action="">
-							<div class="user_name_bl">
-								<label for="user_name">Name</label>
-								<div class="user_input">
-									<input type="text" placeholder="Name" name="user_name" pattern="${{common.userName}}$" required >
-								</div>
-							</div>
-							<div class="user_phone_bl">
-								<label for="user_phone">Phone</label>
-								<div class="user_input">
-									<input type="tel" class="user_phone" data-inputmask="'mask': '+38(099) 999-99-99'" placeholder="Phone" name="user_phone" pattern="^[0-9-+s()\s]*$" required>
-								</div>
-							</div>
-							<div class="button_bl">
-								<button class="btn-lg light_btn">Lorem</button>
-							</div>
-						</form>
-					</div>
+					<div class="form_block">${{common.form}}$</div>
 				</div>
 			</div>
 		</div>
@@ -248,7 +187,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer wrapper" id="contact">
+		<div class="footer" id="contact">
 			<div class="inner container">
 				<div class="row">
 					<div class="contacts col-lg-4 col-md-4 col-sm-4 col-xs-12">

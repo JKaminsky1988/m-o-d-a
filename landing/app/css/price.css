@@ -1,0 +1,45 @@
+.price .panel-default > .panel-heading::after {
+  content: "";
+  display: block;
+  clear: both; }
+.price .panel-default > .panel-heading.master1 {
+  background-color: transparent;
+  background-image: none; }
+.price .panel-default > .panel-heading.master3 {
+  background-color: transparent;
+  background-image: none; }
+.price .panel-default > .panel-heading.master5 {
+  background-color: transparent;
+  background-image: none; }
+.price .panel_title {
+  float: left;
+  margin-bottom: 0; }
+.price .to_gallery {
+  float: right;
+  margin-bottom: 0; }
+.price .panel-body {
+  padding-top: 30px;
+  max-height: 500px;
+  overflow: auto; }
+  .price .panel-body .price_title {
+    text-align: center;
+    margin-bottom: 30px; }
+  .price .panel-body .service_bl {
+    position: relative; }
+    .price .panel-body .service_bl .service_name,
+    .price .panel-body .service_bl .service_price {
+      text-align: center; }
+    .price .panel-body .service_bl .service_name {
+      padding-top: 30px;
+      border-top: 1px solid #000;
+      padding-bottom: 15px;
+      font-weight: bold;
+      position: relative; }
+    .price .panel-body .service_bl .service_price {
+      padding-bottom: 30px; }
+      .price .panel-body .service_bl .service_price::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .price .panel-body .service_bl .service_price p .price {
+        display: block; }

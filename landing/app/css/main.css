@@ -5,7 +5,13 @@ body {
   position: relative;
   padding-top: 72px;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.header,
+.form {
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .inner {
   width: 100%;
@@ -18,7 +24,7 @@ body {
 
 .logo_header {
   float: none;
-  width: 350px;
+  max-width: 350px;
   margin-left: auto;
   margin-right: auto; }
   .logo_header a {
@@ -59,6 +65,9 @@ h1, h2, h3 {
 h2 span {
   display: block; }
 
+.nav_bl {
+  height: 72px; }
+
 nav.navbar {
   position: fixed;
   top: 0;
@@ -72,22 +81,34 @@ nav.navbar {
 
 .nav_header {
   width: 100%;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto; }
   .nav_header li {
     text-align: center;
     width: 100%; }
 
-.button_bl .light_btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+.button_bl {
+  text-align: center;
+  height: auto; }
+  .button_bl .data_send_btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #e7e7e7;
+    width: auto; }
 
 .lang_btn_bl {
-  position: absolute;
+  position: fixed;
   top: 8px;
   right: 15px;
-  z-index: 1; }
+  z-index: 101; }
+  .lang_btn_bl .dropdown-menu {
+    width: auto;
+    min-width: auto;
+    left: 50%;
+    transform: translateX(-50%); }
+    .lang_btn_bl .dropdown-menu > li > a {
+      padding: 6px 12px; }
 
 .top_btn_bl {
   position: fixed;
@@ -161,67 +182,6 @@ nav.navbar {
   text-align: center; }
   .social a {
     line-height: 65px; }
-
-.gallery .panel-heading::after {
-  content: "";
-  display: block;
-  clear: both; }
-.gallery .panel_title {
-  float: left;
-  margin-bottom: 0; }
-.gallery .to_price {
-  float: right;
-  margin-bottom: 0; }
-.gallery .panel-body {
-  height: 500px; }
-  .gallery .panel-body img {
-    margin-bottom: 30px; }
-
-.price .panel-default > .panel-heading::after {
-  content: "";
-  display: block;
-  clear: both; }
-.price .panel-default > .panel-heading.master1 {
-  background-color: transparent;
-  background-image: none; }
-.price .panel-default > .panel-heading.master3 {
-  background-color: transparent;
-  background-image: none; }
-.price .panel-default > .panel-heading.master5 {
-  background-color: transparent;
-  background-image: none; }
-.price .panel_title {
-  float: left;
-  margin-bottom: 0; }
-.price .to_gallery {
-  float: right;
-  margin-bottom: 0; }
-.price .panel-body {
-  padding-top: 30px;
-  max-height: 500px;
-  overflow: auto; }
-  .price .panel-body .price_title {
-    text-align: center;
-    margin-bottom: 30px; }
-  .price .panel-body .service_bl {
-    position: relative; }
-    .price .panel-body .service_bl .service_name,
-    .price .panel-body .service_bl .service_price {
-      text-align: center; }
-    .price .panel-body .service_bl .service_name {
-      padding-top: 30px;
-      border-top: 1px solid #000;
-      padding-bottom: 15px;
-      font-weight: bold;
-      position: relative; }
-    .price .panel-body .service_bl .service_price {
-      padding-bottom: 30px; }
-      .price .panel-body .service_bl .service_price::after {
-        content: "";
-        display: block;
-        clear: both; }
-      .price .panel-body .service_bl .service_price p .price {
-        display: block; }
 
 .service_bl .new,
 .service_bl .sale,

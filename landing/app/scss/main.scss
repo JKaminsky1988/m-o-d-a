@@ -9,8 +9,14 @@ body {
 .wrapper {
   position: relative;
   padding-top: 72px;
-  padding-left: 15px;
-  padding-right: 15px;
+
+  @include p-x-15;
+  @include p-y-80;
+}
+
+.header,
+.form {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .inner {
@@ -25,7 +31,7 @@ body {
 // LOGOS ===================================
 .logo_header {
   float: none;
-  width: 350px;
+  max-width: 350px;
 
   @include m-x-auto;
 
@@ -82,6 +88,10 @@ h2 {
 }
 
 // NAVIGATION ===================================
+.nav_bl {
+  height: 72px;
+}
+
 nav.navbar {
   position: fixed;
   top: 0;
@@ -97,6 +107,7 @@ nav.navbar {
 
 .nav_header {
   width: 100%;
+  padding-right: 30px;
 
   @include m-x-auto;
 
@@ -107,19 +118,35 @@ nav.navbar {
 }
 
 // BUTTONS ===================================
-.button_bl {
-  .light_btn {
-    display: block;
 
-    @include m-x-auto;
+.button_bl {
+  text-align: center;
+  height: auto;
+
+  .data_send_btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #e7e7e7;
+    width: auto;
   }
 }
 
 .lang_btn_bl {
-  position: absolute;
+  position: fixed;
   top: 8px;
   right: 15px;
-  z-index: 1;
+  z-index: 101;
+
+  .dropdown-menu {
+    width: auto;
+    min-width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+
+    > li > a {
+      padding: 6px 12px;
+    }
+  }
 }
 
 .top_btn_bl {
@@ -228,103 +255,6 @@ nav.navbar {
 
   a {
     line-height: 65px;
-  }
-}
-
-// FOLIO ===================================
-.gallery {
-  .panel-heading {
-    @include clean;
-  }
-
-  .panel_title {
-    float: left;
-    margin-bottom: 0;
-  }
-
-  .to_price {
-    float: right;
-    margin-bottom: 0;
-  }
-
-  .panel-body {
-    height: 500px;
-
-    img {
-      margin-bottom: 30px;
-    }
-  }
-}
-
-// PRICE ===================================
-.price {
-  .panel-default > .panel-heading {
-    @include clean;
-
-    &.master1 {
-      background-color: transparent;
-      background-image: none;
-    }
-
-    &.master3 {
-      background-color: transparent;
-      background-image: none;
-    }
-
-    &.master5 {
-      background-color: transparent;
-      background-image: none;
-    }
-  }
-
-  .panel_title {
-    float: left;
-    margin-bottom: 0;
-  }
-
-  .to_gallery {
-    float: right;
-    margin-bottom: 0;
-  }
-
-  .panel-body {
-    padding-top: 30px;
-    max-height: 500px;
-    overflow: auto;
-
-    .price_title {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .service_bl {
-      position: relative;
-
-      .service_name,
-      .service_price {
-        text-align: center;
-      }
-
-      .service_name {
-        padding-top: 30px;
-        border-top: 1px solid #000;
-        padding-bottom: 15px;
-        font-weight: bold;
-        position: relative;
-      }
-
-      .service_price {
-        padding-bottom: 30px;
-
-        @include clean;
-
-        p {
-          .price {
-            display: block;
-          }
-        }
-      }
-    }
   }
 }
 

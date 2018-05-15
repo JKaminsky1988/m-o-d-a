@@ -19,7 +19,7 @@ gulp.task('js', function() {
             './app/js/scroll.js',
         ])
         .pipe(concat('all.js')) //конкатенирую js-ки в all.js
-        .pipe(minJs()) // минифицирую all.js
+       // .pipe(minJs())  минифицирую all.js
         .pipe(strip()) // удаляю комменты
         .pipe(rename({ // добавляю суффикс .min
             suffix: '.min'

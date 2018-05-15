@@ -1,2 +1,3 @@
 module.exports = {
+	helloTxt: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, laborum perferendis provident rerum pariatur sed facilis repellat veniam aspernatur adipisci. Aliquam explicabo dignissimos deserunt assumenda corrupti! Sapiente dicta, nisi dolores! Inventore modi id, excepturi consectetur, distinctio nobis est, accusamus, libero dolore ab quis. Asperiores quasi harum adipisci saepe, ad omnis debitis ratione. Voluptatum veritatis voluptatibus natus quasi amet excepturi doloribus.',
 };

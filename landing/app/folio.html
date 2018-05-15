@@ -5,17 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Document</title>
 		${{common.urlCss}}$
-		<script src="js/jquery.min.js"></script>
 	</head>
 	<body class="${{common.localLang}}$">
 		<!-- LANG BUTTON -->
 		<div class="lang_btn_bl">
-			<div class="btn-group">
-				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">${{common.localLang}}$ <span class="caret"></span></button>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="/${{common.localLangTo}}$/folio.html">${{common.localLangTo}}$</a></li>
-				</ul>
-			</div>
+			${{common.langBtn}}$
 		</div>
 		<div class="header wrapper">
 			<!-- HEADER -->
@@ -27,28 +21,30 @@
 				</div>
 				<h1>Lorem ipsum dolor.</h1>
 				<!-- NAVBAR COMPONENT -->
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							</button>
+				<div class="nav_bl">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+								<ul class="nav navbar-nav nav_header">
+									<li><a class="scroll" href="../index.html#about">${{common.aboutLink}}$</a></li>
+									<li><a class="scroll" href="#gallery">${{common.folioLink}}$</a></li>
+									<li><a class="scroll" href="/price.html">${{common.priceLink}}$</a></li>
+									<li><a class="scroll" href="/shop.html">${{common.shopLink}}$</a></li>
+									<li><a class="scroll" href="#review">${{common.reviewsLink}}$</a></li>
+									<li><a class="scroll" href="#contact">${{common.contactsLink}}$</a></li>
+								</ul>
+							</div>
 						</div>
-						<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-							<ul class="nav navbar-nav nav_header">
-								<li class="active"><a href="#about">${{common.aboutLink}}$</a></li>
-								<li><a class="scroll" href="/folio.html">${{common.folioLink}}$</a></li>
-								<li><a class="scroll" href="/price.html">${{common.priceLink}}$</a></li>
-								<li><a class="scroll" href="/shop.html">${{common.shopLink}}$</a></li>
-								<li><a class="scroll" href="#review">${{common.reviewsLink}}$</a></li>
-								<li><a class="scroll" href="#contact">${{common.contactsLink}}$</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+					</nav>
+				</div>
 			</div>
 		</div>
 		<div class="gallery wrapper" id="gallery">
@@ -174,7 +170,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer wrapper" id="contact">
+		<div class="footer" id="contact">
 			<div class="inner container">
 				<div class="row">
 					<div class="contacts col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -203,22 +199,7 @@
 						</div>
 						<div class="modal-body">
 							<!-- FORM BLOCK -->
-							<div class="form_block">
-								<form action="">
-									<div class="user_name_bl">
-										<label for="user_name">Name</label>
-										<div class="user_input">
-											<input type="text" placeholder="Name" name="user_name" pattern="${{common.userName}}$" required >
-										</div>
-									</div>
-									<div class="user_phone_bl">
-										<label for="user_phone">Phone</label>
-										<div class="user_input">
-											<input type="tel" class="user_phone" data-inputmask="'mask': '+38(099) 999-99-99'" placeholder="Phone" name="user_phone" pattern="^[0-9-+s()\s]*$" required>
-										</div>
-									</div>
-								</form>
-							</div>
+							<div class="form_block">${{common.form}}$</div>
 						</div>
 						<div class="modal-footer">
 							<div class="button_bl">

@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixins";
+
+.price {
+  .panel-default > .panel-heading {
+    @include clean;
+
+    &.master1 {
+      background-color: transparent;
+      background-image: none;
+    }
+
+    &.master3 {
+      background-color: transparent;
+      background-image: none;
+    }
+
+    &.master5 {
+      background-color: transparent;
+      background-image: none;
+    }
+  }
+
+  .panel_title {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .to_gallery {
+    float: right;
+    margin-bottom: 0;
+  }
+
+  .panel-body {
+    padding-top: 30px;
+    max-height: 500px;
+    overflow: auto;
+
+    .price_title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .service_bl {
+      position: relative;
+
+      .service_name,
+      .service_price {
+        text-align: center;
+      }
+
+      .service_name {
+        padding-top: 30px;
+        border-top: 1px solid #000;
+        padding-bottom: 15px;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .service_price {
+        padding-bottom: 30px;
+
+        @include clean;
+
+        p {
+          .price {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

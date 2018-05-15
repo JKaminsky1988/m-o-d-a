@@ -1,7 +1,4 @@
 @media (min-width: 768px) {
-  .wrapper {
-    padding-top: 0; }
-
   .col-lg-2_5 {
     float: left;
     width: 20%; }

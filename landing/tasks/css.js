@@ -23,7 +23,7 @@ gulp.task('css', ['scss'], function() {
             suffix: '.min'
         }))
         .pipe(gulp.dest('./css')) // кладу all.css в прод в папку css/
-        .pipe(browserSync.reload({
+        .pipe(browserSync.reload({ // обновляю браузер после изменений в файле
             stream: true
         }))
 });

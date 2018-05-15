@@ -1,0 +1,97 @@
+form > div {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  height: 70px;
+  padding-top: 30px; }
+  form > div.user_comment_bl {
+    height: auto; }
+  form > div label {
+    margin-top: 15px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+    font-size: 18px;
+    opacity: 0;
+    width: 0;
+    color: #000; }
+  form > div input,
+  form > div textarea {
+    width: 100%;
+    display: block;
+    background: none;
+    outline: none;
+    -moz-appearance: none;
+    color: #fff;
+    border-width: 0 0 2px 0;
+    border-color: #fff;
+    color: #000; }
+    form > div input:focus + label,
+    form > div textarea:focus + label {
+      bottom: auto;
+      top: -15px;
+      font-size: 14px;
+      line-height: 1;
+      opacity: 1;
+      transition: .2s;
+      width: auto; }
+    form > div input:not(:empty) + label,
+    form > div textarea:not(:empty) + label {
+      top: -15px; }
+  form > div input {
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border-radius: 0; }
+    form > div input::-webkit-input-placeholder {
+      color: #000;
+      font-size: 18px; }
+    form > div input::-moz-placeholder {
+      color: #000;
+      font-size: 18px; }
+    form > div input:-ms-input-placeholder {
+      color: #000;
+      font-size: 18px; }
+    form > div input:focus {
+      border-bottom-width: 2px;
+      box-shadow: none; }
+      form > div input:focus::-webkit-input-placeholder {
+        color: transparent; }
+      form > div input:focus::-moz-placeholder {
+        color: transparent; }
+      form > div input:focus:-ms-input-placeholder {
+        color: transparent; }
+  form > div textarea {
+    padding: 0 10px 3px 10px;
+    max-width: 540px;
+    border-top: none;
+    border-left: none;
+    max-height: 300px !important;
+    resize: none;
+    border-radius: 0;
+    border-right: 2px solid #fff; }
+    form > div textarea:-moz-placeholder {
+      color: #000;
+      font-size: 18px; }
+    form > div textarea::-webkit-input-placeholder {
+      color: #000;
+      font-size: 18px; }
+    form > div textarea:focus {
+      box-shadow: none; }
+      form > div textarea:focus:-moz-placeholder {
+        color: transparent; }
+      form > div textarea:focus::-webkit-input-placeholder {
+        color: transparent; }
+    form > div textarea::-webkit-scrollbar {
+      width: 7px;
+      background-color: transparent; }
+    form > div textarea::-webkit-scrollbar-thumb {
+      background-color: #000;
+      border-radius: 5px; }
+    form > div textarea::-webkit-scrollbar-corner {
+      background-color: transparent; }

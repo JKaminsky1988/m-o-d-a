@@ -1,0 +1,14 @@
+.gallery .panel-heading::after {
+  content: "";
+  display: block;
+  clear: both; }
+.gallery .panel_title {
+  float: left;
+  margin-bottom: 0; }
+.gallery .to_price {
+  float: right;
+  margin-bottom: 0; }
+.gallery .panel-body {
+  height: 500px; }
+  .gallery .panel-body img {
+    margin-bottom: 30px; }

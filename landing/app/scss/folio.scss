@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+
+.gallery {
+  .panel-heading {
+    @include clean;
+  }
+
+  .panel_title {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .to_price {
+    float: right;
+    margin-bottom: 0;
+  }
+
+  .panel-body {
+    height: 500px;
+
+    img {
+      margin-bottom: 30px;
+    }
+  }
+}
