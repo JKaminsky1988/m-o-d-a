@@ -177,7 +177,6 @@ nav.navbar {
 }
 
 // BUTTONS ===================================
-
 .button_bl {
   text-align: center;
   height: auto;
@@ -201,6 +200,7 @@ nav.navbar {
       text-decoration: none;
       background-color: $black;
       color: $peach;
+      outline: 2px solid $peach;
     }
   }
 }
@@ -326,14 +326,12 @@ nav.navbar {
           letter-spacing: 1px;
         }
 
+        @include link;
+
         a {
-          display: block;
-          text-align: center;
           color: $pink;
-          font-size: 18px;
 
           &:hover {
-            text-decoration: none;
             color: $peach;
           }
         }
@@ -347,12 +345,18 @@ nav.navbar {
 }
 
 // CAROUSEL ===================================
+.bx-viewport {
+  height: auto !important;
+}
+
 .bxslider {
   overflow: hidden;
+  padding-top: 30px;
 
   img {
     max-width: 200px;
     height: 200px;
+    border-radius: 100px;
 
     @include m-x-auto;
   }
@@ -361,10 +365,20 @@ nav.navbar {
     text-align: center;
   }
 
+  @include link;
+
   a {
-    display: block;
-    text-align: center;
+    color: $black;
+
+    &:hover {
+      color: $peach;
+    }
   }
+}
+
+.bx-prev,
+.bx-next {
+  background-size: contain;
 }
 
 //FOOTER ===================================

@@ -50,15 +50,19 @@ form {
       border-color: $pink;
       z-index: 2;
 
-      &:focus + label {
-        bottom: auto;
-        top: -15px;
-        font-size: 14px;
-        line-height: 1;
-        opacity: 1;
-        transition: .2s;
-        width: auto;
-        color: $pink;
+      &:focus {
+        border-color: $peach;
+
+        + label {
+          bottom: auto;
+          top: -15px;
+          font-size: 14px;
+          line-height: 1;
+          opacity: 1;
+          transition: .2s;
+          width: auto;
+          color: $peach;
+        }
       }
 
       &:not(:empty) + label {

@@ -48,3 +48,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+// LINKS
+@mixin link {
+  a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin vertical {
+  display: inline-block;
+  vertical-align: middle;
+}

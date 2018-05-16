@@ -94,16 +94,21 @@
   .bxslider {
     .rewiev_slide {
       text-align: center;
+      width: 88%;
+      margin-left: 7%;
     }
 
     img {
       width: 30%;
-      display: inline-block;
+
+      @include vertical;
     }
 
     .rewiev_txt {
       width: 70%;
-      display: inline-block;
+      padding-top: 30px;
+
+      @include vertical;
     }
   }
 

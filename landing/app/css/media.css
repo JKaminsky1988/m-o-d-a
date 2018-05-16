@@ -49,13 +49,18 @@
     width: 16.6666666667%; }
 
   .bxslider .rewiev_slide {
-    text-align: center; }
+    text-align: center;
+    width: 88%;
+    margin-left: 7%; }
   .bxslider img {
     width: 30%;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
   .bxslider .rewiev_txt {
     width: 70%;
-    display: inline-block; }
+    padding-top: 30px;
+    display: inline-block;
+    vertical-align: middle; }
 
   .footer {
     min-height: 500px; }

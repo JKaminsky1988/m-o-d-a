@@ -40,16 +40,19 @@ form > div {
     border-width: 0 0 2px 0;
     border-color: #febbab;
     z-index: 2; }
-    form > div input:focus + label,
-    form > div textarea:focus + label {
-      bottom: auto;
-      top: -15px;
-      font-size: 14px;
-      line-height: 1;
-      opacity: 1;
-      transition: .2s;
-      width: auto;
-      color: #febbab; }
+    form > div input:focus,
+    form > div textarea:focus {
+      border-color: #d95d3b; }
+      form > div input:focus + label,
+      form > div textarea:focus + label {
+        bottom: auto;
+        top: -15px;
+        font-size: 14px;
+        line-height: 1;
+        opacity: 1;
+        transition: .2s;
+        width: auto;
+        color: #d95d3b; }
     form > div input:not(:empty) + label,
     form > div textarea:not(:empty) + label {
       top: -15px; }
