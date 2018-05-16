@@ -8,9 +8,14 @@
   padding-right: 15px;
 }
 
-@mixin p-y-80 {
-  padding-top: 80px;
-  padding-bottom: 80px;
+@mixin p-x-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin p-y-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 @mixin clean {
@@ -19,4 +24,27 @@
     display: block;
     clear: both;
   }
+}
+
+// COLORS
+@mixin bgBlack {
+  background: $black;
+  color: $pink;
+}
+
+@mixin bgPink {
+  background: $pink;
+  color: $black;
+}
+
+@mixin l-s-1 {
+  letter-spacing: 1px;
+  font-family: $gogoia;
+}
+
+// BACKGROUNDS
+@mixin bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

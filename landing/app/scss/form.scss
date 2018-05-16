@@ -1,3 +1,18 @@
+@import "variables";
+@import "mixins";
+
+.form_1 {
+  background-image: url(../img/bg/bg_2.png);
+
+  @include bg;
+}
+
+.form_2 {
+  background-image: url(../img/bg/bg_3.png);
+
+  @include bg;
+}
+
 form {
   > div {
     width: 100%;
@@ -30,10 +45,10 @@ form {
       background: none;
       outline: none;
       -moz-appearance: none;
-      color: #fff;
+      color: $pink;
       border-width: 0 0 2px 0;
-      border-color: #fff;
-      color: #000;
+      border-color: $pink;
+      z-index: 2;
 
       &:focus + label {
         bottom: auto;
@@ -43,6 +58,7 @@ form {
         opacity: 1;
         transition: .2s;
         width: auto;
+        color: $pink;
       }
 
       &:not(:empty) + label {
@@ -60,17 +76,17 @@ form {
       border-radius: 0;
 
       &::-webkit-input-placeholder {
-        color: #000;
+        color: $pink;
         font-size: 18px;
       }
 
       &::-moz-placeholder {
-        color: #000;
+        color: $pink;
         font-size: 18px;
       }
 
       &:-ms-input-placeholder {
-        color: #000;
+        color: $pink;
         font-size: 18px;
       }
 
@@ -100,15 +116,15 @@ form {
       max-height: 300px !important;
       resize: none;
       border-radius: 0;
-      border-right: 2px solid #fff;
+      border-right: 2px solid $pink;
 
       &:-moz-placeholder {
-        color: #000;
+        color: $pink;
         font-size: 18px;
       }
 
       &::-webkit-input-placeholder {
-        color: #000;
+        color: $pink;
         font-size: 18px;
       }
 
@@ -130,8 +146,7 @@ form {
       }
 
       &::-webkit-scrollbar-thumb {
-        background-color: #000;
-        border-radius: 5px;
+        background-color: $pink;
       }
 
       &::-webkit-scrollbar-corner {

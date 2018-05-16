@@ -5,6 +5,7 @@
 body {
   min-width: 320px;
   font-size: 20px;
+  font-family: $mon;
 }
 
 .wrapper {
@@ -12,17 +13,17 @@ body {
   padding-top: 72px;
 
   @include p-x-15;
-  @include p-y-80;
+  @include p-y-100;
+}
+
+.container {
+  @include p-x-0;
 }
 
 .header {
   background-image: url(../img/bg/header_bg.png);
-  background-size: cover;
-  background-position: top center;
-}
 
-.form {
-  background-color: rgba(0, 0, 0, 0.4);
+  @include bg;
 }
 
 .inner {
@@ -30,7 +31,6 @@ body {
   max-width: 1140px;
   position: relative;
 
-  @include p-x-15;
   @include m-x-auto;
 }
 
@@ -46,7 +46,8 @@ body {
     position: relative;
     padding-top: 100%;
     background-image: url(../img/logo.png);
-    background-size: contain;
+
+    @include bg;
   }
 }
 
@@ -74,6 +75,25 @@ body {
 
 .txt_100 {
   text-align: center;
+
+  h2 {
+    font-size: 73px;
+    line-height: 1;
+    font-weight: 100;
+
+    span {
+      font-size: 50px;
+      color: $peach;
+      line-height: 0.2;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.question {
+  font-size: 50px;
+  letter-spacing: 1px;
 }
 
 .italic {
@@ -84,7 +104,6 @@ body {
 
 // TITLES ===================================
 h1 {
-  font-family: $gogoiaRegular;
   font-size: 73px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -93,13 +112,17 @@ h1 {
 
 .d_letter {
   font-family: $gogoiaDeco;
+  display: inline-block;
 }
 
 h1, h2, h3 {
+  font-family: $gogoia;
   text-align: center;
 }
 
 h2 {
+  font-size: 73px;
+
   span {
     display: block;
   }
@@ -116,6 +139,9 @@ nav.navbar {
   left: 0;
   right: 0;
   z-index: 100;
+  background-color: $black;
+  border-radius: 0;
+  border: none;
 }
 
 .navbar-toggle {
@@ -123,12 +149,7 @@ nav.navbar {
   margin-left: 15px;
 }
 
-.navbar-default {
-  // all of this
-  background: none;
-  border: none;
-  box-shadow: none;
-
+.navbar {
   .nav_header {
     width: 100%;
     padding-right: 30px;
@@ -140,19 +161,15 @@ nav.navbar {
       width: (100% / 6);
 
       > a {
-        font-family: $azoft;
-        color: $black;
-        font-size: 20px;
-        font-weight: bold;
+        color: $pink;
+        font-size: 18px;
         letter-spacing: 1px;
-        padding-left: 0;
-        padding-right: 0;
 
-        // this
-        text-shadow: none;
-
-        &:hover {
-          color: $pink;
+        &:hover,
+        &:focus {
+          color: $peach;
+          background: none;
+          outline: none;
         }
       }
     }
@@ -171,35 +188,65 @@ nav.navbar {
     height: 60px;
     line-height: 60px;
     display: inline-block;
-    background-color: #e7e7e7;
-    background-color: $pink;
-    color: $black;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+    font-family: $mon_bold;
 
+    @include bgPink;
     @include p-x-15;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $black;
+      color: $peach;
+    }
   }
 }
 
 .lang_btn_bl {
   position: fixed;
-  top: 8px;
+  top: 10px;
   right: 15px;
   z-index: 101;
+  width: 50px;
 
   button {
+    width: 100%;
+    height: 30px;
     background-color: $black;
-    color: #fff;
+    color: $pink;
     text-shadow: none;
     border: none;
+    font-size: 14px;
 
     &:hover {
-      color: $pink;
+      background-color: $black;
+      color: #d95d3b;
     }
   }
 
   .open {
     button {
+      border-radius: 0;
+
+      @include bgBlack;
+    }
+
+    .dropdown-menu {
       background-color: $black;
-      color: $pink;
+      border-radius: 0;
+      width: 100%;
+      padding: 0;
+
+      li a {
+        color: #fff;
+
+        &:hover {
+          @include bgBlack;
+        }
+      }
     }
   }
 
@@ -219,10 +266,23 @@ nav.navbar {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  padding: 10px;
-  background-color: #fff;
-  outline: 1px solid #000;
   z-index: 2;
+
+  a {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+
+    @include bgBlack;
+
+    &:hover {
+      text-decoration: none;
+      color: $peach;
+    }
+  }
 }
 
 .form_block {
@@ -239,7 +299,9 @@ nav.navbar {
     position: relative;
     width: 100%;
     padding-top: 100%;
-    background-image: url(../img/test-img.png);
+    background-image: url(../img/folio/nail_1.png);
+
+    @include bg;
 
     .serv_info {
       display: none;
@@ -248,20 +310,32 @@ nav.navbar {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.7);
 
       > div {
         position: absolute;
         bottom: 20px;
         width: 100%;
+        color: $pink;
 
-        h2 {
+        p {
           text-align: center;
+          font-family: $mon_bold;
+          font-size: 24px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
         }
 
         a {
           display: block;
           text-align: center;
+          color: $pink;
+          font-size: 18px;
+
+          &:hover {
+            text-decoration: none;
+            color: $peach;
+          }
         }
       }
     }

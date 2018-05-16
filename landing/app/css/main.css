@@ -1,29 +1,30 @@
 body {
   min-width: 320px;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: "montserratregular"; }
 
 .wrapper {
   position: relative;
   padding-top: 72px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.container {
+  padding-left: 0;
+  padding-right: 0; }
 
 .header {
   background-image: url(../img/bg/header_bg.png);
-  background-size: cover;
-  background-position: top center; }
-
-.form {
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .inner {
   width: 100%;
   max-width: 1140px;
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -37,7 +38,9 @@ body {
     position: relative;
     padding-top: 100%;
     background-image: url(../img/logo.png);
-    background-size: contain; }
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .logo_footer {
   width: 100px;
@@ -58,6 +61,20 @@ body {
 
 .txt_100 {
   text-align: center; }
+  .txt_100 h2 {
+    font-size: 73px;
+    line-height: 1;
+    font-weight: 100; }
+    .txt_100 h2 span {
+      font-size: 50px;
+      color: #d95d3b;
+      line-height: 0.2;
+      font-weight: bold;
+      letter-spacing: 1px; }
+
+.question {
+  font-size: 50px;
+  letter-spacing: 1px; }
 
 .italic {
   display: block;
@@ -65,20 +82,23 @@ body {
   font-weight: normal; }
 
 h1 {
-  font-family: "gogoiaregular";
   font-size: 73px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #262626; }
 
 .d_letter {
-  font-family: "gogoiadeco"; }
+  font-family: "gogoiadeco";
+  display: inline-block; }
 
 h1, h2, h3 {
+  font-family: "gogoiaregular";
   text-align: center; }
 
-h2 span {
-  display: block; }
+h2 {
+  font-size: 73px; }
+  h2 span {
+    display: block; }
 
 .nav_bl {
   height: 72px; }
@@ -88,35 +108,31 @@ nav.navbar {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100; }
+  z-index: 100;
+  background-color: #262626;
+  border-radius: 0;
+  border: none; }
 
 .navbar-toggle {
   float: left;
   margin-left: 15px; }
 
-.navbar-default {
-  background: none;
-  border: none;
-  box-shadow: none; }
-  .navbar-default .nav_header {
-    width: 100%;
-    padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto; }
-    .navbar-default .nav_header > li {
-      text-align: center;
-      width: 16.6666666667%; }
-      .navbar-default .nav_header > li > a {
-        font-family: "azoft_sansregular";
-        color: #262626;
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        padding-left: 0;
-        padding-right: 0;
-        text-shadow: none; }
-        .navbar-default .nav_header > li > a:hover {
-          color: #febbab; }
+.navbar .nav_header {
+  width: 100%;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto; }
+  .navbar .nav_header > li {
+    text-align: center;
+    width: 16.6666666667%; }
+    .navbar .nav_header > li > a {
+      color: #febbab;
+      font-size: 18px;
+      letter-spacing: 1px; }
+      .navbar .nav_header > li > a:hover, .navbar .nav_header > li > a:focus {
+        color: #d95d3b;
+        background: none;
+        outline: none; }
 
 .button_bl {
   text-align: center;
@@ -127,27 +143,51 @@ nav.navbar {
     height: 60px;
     line-height: 60px;
     display: inline-block;
-    background-color: #e7e7e7;
-    background-color: #febbab;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+    font-family: "montserratbold";
+    background: #febbab;
     color: #262626;
     padding-left: 15px;
     padding-right: 15px; }
+    .button_bl .data_send_btn:hover {
+      text-decoration: none;
+      background-color: #262626;
+      color: #d95d3b; }
 
 .lang_btn_bl {
   position: fixed;
-  top: 8px;
+  top: 10px;
   right: 15px;
-  z-index: 101; }
+  z-index: 101;
+  width: 50px; }
   .lang_btn_bl button {
+    width: 100%;
+    height: 30px;
     background-color: #262626;
-    color: #fff;
+    color: #febbab;
     text-shadow: none;
-    border: none; }
+    border: none;
+    font-size: 14px; }
     .lang_btn_bl button:hover {
-      color: #febbab; }
+      background-color: #262626;
+      color: #d95d3b; }
   .lang_btn_bl .open button {
-    background-color: #262626;
+    border-radius: 0;
+    background: #262626;
     color: #febbab; }
+  .lang_btn_bl .open .dropdown-menu {
+    background-color: #262626;
+    border-radius: 0;
+    width: 100%;
+    padding: 0; }
+    .lang_btn_bl .open .dropdown-menu li a {
+      color: #fff; }
+      .lang_btn_bl .open .dropdown-menu li a:hover {
+        background: #262626;
+        color: #febbab; }
   .lang_btn_bl .dropdown-menu {
     width: auto;
     min-width: auto;
@@ -160,10 +200,19 @@ nav.navbar {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  padding: 10px;
-  background-color: #fff;
-  outline: 1px solid #000;
   z-index: 2; }
+  .top_btn_bl a {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    background: #262626;
+    color: #febbab; }
+    .top_btn_bl a:hover {
+      text-decoration: none;
+      color: #d95d3b; }
 
 .form_block {
   width: 100%;
@@ -176,7 +225,10 @@ nav.navbar {
   position: relative;
   width: 100%;
   padding-top: 100%;
-  background-image: url(../img/test-img.png); }
+  background-image: url(../img/folio/nail_1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .servise .serv_bg .serv_info {
     display: none;
     position: absolute;
@@ -184,16 +236,26 @@ nav.navbar {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.7); }
     .servise .serv_bg .serv_info > div {
       position: absolute;
       bottom: 20px;
-      width: 100%; }
-      .servise .serv_bg .serv_info > div h2 {
-        text-align: center; }
+      width: 100%;
+      color: #febbab; }
+      .servise .serv_bg .serv_info > div p {
+        text-align: center;
+        font-family: "montserratbold";
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
       .servise .serv_bg .serv_info > div a {
         display: block;
-        text-align: center; }
+        text-align: center;
+        color: #febbab;
+        font-size: 18px; }
+        .servise .serv_bg .serv_info > div a:hover {
+          text-decoration: none;
+          color: #d95d3b; }
   .servise .serv_bg:hover .serv_info {
     display: block; }
 

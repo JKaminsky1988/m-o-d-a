@@ -1,3 +1,15 @@
+.form_1 {
+  background-image: url(../img/bg/bg_2.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.form_2 {
+  background-image: url(../img/bg/bg_3.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 form > div {
   width: 100%;
   max-width: 500px;
@@ -24,10 +36,10 @@ form > div {
     background: none;
     outline: none;
     -moz-appearance: none;
-    color: #fff;
+    color: #febbab;
     border-width: 0 0 2px 0;
-    border-color: #fff;
-    color: #000; }
+    border-color: #febbab;
+    z-index: 2; }
     form > div input:focus + label,
     form > div textarea:focus + label {
       bottom: auto;
@@ -36,7 +48,8 @@ form > div {
       line-height: 1;
       opacity: 1;
       transition: .2s;
-      width: auto; }
+      width: auto;
+      color: #febbab; }
     form > div input:not(:empty) + label,
     form > div textarea:not(:empty) + label {
       top: -15px; }
@@ -49,13 +62,13 @@ form > div {
     padding-left: 10px;
     border-radius: 0; }
     form > div input::-webkit-input-placeholder {
-      color: #000;
+      color: #febbab;
       font-size: 18px; }
     form > div input::-moz-placeholder {
-      color: #000;
+      color: #febbab;
       font-size: 18px; }
     form > div input:-ms-input-placeholder {
-      color: #000;
+      color: #febbab;
       font-size: 18px; }
     form > div input:focus {
       border-bottom-width: 2px;
@@ -74,12 +87,12 @@ form > div {
     max-height: 300px !important;
     resize: none;
     border-radius: 0;
-    border-right: 2px solid #fff; }
+    border-right: 2px solid #febbab; }
     form > div textarea:-moz-placeholder {
-      color: #000;
+      color: #febbab;
       font-size: 18px; }
     form > div textarea::-webkit-input-placeholder {
-      color: #000;
+      color: #febbab;
       font-size: 18px; }
     form > div textarea:focus {
       box-shadow: none; }
@@ -91,7 +104,6 @@ form > div {
       width: 7px;
       background-color: transparent; }
     form > div textarea::-webkit-scrollbar-thumb {
-      background-color: #000;
-      border-radius: 5px; }
+      background-color: #febbab; }
     form > div textarea::-webkit-scrollbar-corner {
       background-color: transparent; }

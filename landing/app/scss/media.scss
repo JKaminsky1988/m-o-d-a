@@ -20,13 +20,25 @@
   }
 
   // TEXT ===================================
+  .benefits_bl {
+    @include clean;
+  }
+
   .txt_100 {
+    @include clean;
+
+    // min-height: 370px;
+
     &:nth-child(odd) {
-      padding-right: 45px;
+      > div {
+        padding-right: 45px;
+      }
     }
 
     &:nth-child(even) {
-      padding-left: 45px;
+      > div {
+        padding-left: 45px;
+      }
     }
   }
 
@@ -49,6 +61,14 @@
       top: 0;
       left: 0;
       right: 0;
+
+      .nav_header {
+        width: 100% - 4;
+
+        li {
+          width: (100% / 6);
+        }
+      }
     }
 
     .container-fluid,
@@ -58,9 +78,7 @@
     }
   }
 
-  .navbar-default .nav_header {
-    padding-right: 0;
-
+  .navbar .nav_header {
     li {
       width: (100% / 6);
     }
@@ -115,6 +133,22 @@
 
       .contacts_info {
         float: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 995px) {
+  .txt_100 {
+    &:nth-child(odd) {
+      > div {
+        padding-right: 0px;
+      }
+    }
+
+    &:nth-child(even) {
+      > div {
+        padding-left: 0px;
       }
     }
   }

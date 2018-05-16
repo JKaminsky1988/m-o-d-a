@@ -3,8 +3,8 @@ var runSeq = require('run-sequence');
 
 gulp.task('show', function() {
     runSeq(
-        'fontsDest',
         'css',
+        'fonts',
         'js',
         'html',
         'img',

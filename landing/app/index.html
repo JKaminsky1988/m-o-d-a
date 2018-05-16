@@ -4,6 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Document</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 		${{common.urlCss}}$
 	</head>
 	<body class="${{common.localLang}}$">
@@ -20,8 +21,8 @@
 				<h1>${{common.h1}}$</h1>
 				<!-- NAVBAR COMPONENT -->
 				<div class="nav_bl">
-					<nav class="navbar navbar-default">
-						<div class="container-fluid">
+					<nav class="navbar">
+						<div class="container">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 								<span class="sr-only">Toggle navigation</span>
@@ -47,7 +48,7 @@
 				<div class="row">
 					<p class="hello_txt">${{index.helloTxt}}$</p>
 					<div class="button_bl">
-						<a href="#form" class="data_send_btn scroll">Lorem</a>
+						<a href="#form" class="data_send_btn scroll">${{common.sendBtn}}$</a>
 					</div>
 				</div>
 			</div>
@@ -56,35 +57,53 @@
 			<!-- benefits -->
 			<div class="inner container">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 txt_100">
-						<h2>100%<span>Lorem.</span></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores perferendis laudantium rem eum voluptate nostrum itaque non quas officia, architecto commodi consequuntur minima saepe hic ea impedit error quibusdam aperiam.</p>
+					<div class="benefits_bl">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 txt_100">
+							<div>
+								<h2>100%<span>${{index.one100Title}}$</span></h2>
+								<p>${{index.one100Txt}}$</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 txt_100">
+							<div>
+								<h2>100%<span>${{index.two100Title}}$</span></h2>
+								<p>${{index.two100Txt}}$</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 txt_100">
-						<h2>100%<span>Lorem.</span></h2>
-						<p>Pariatur inventore maiores consectetur cupiditate quasi ut. Obcaecati magnam cumque autem dolores vero, accusamus earum. Culpa, aliquam necessitatibus quaerat exercitationem modi officia saepe quam dolor repudiandae minus! Ipsum, molestias, a.</p>
+					<div class="benefits_bl">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 txt_100">
+							<div>
+								<h2>100%<span>${{index.three100Title}}$</span></h2>
+								<p>${{index.three100Txt}}$</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 txt_100">
+							<div>
+								<h2>100%<span>${{index.four100Title}}$</span></h2>
+								<p>${{index.four100Txt}}$</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 txt_100">
-						<h2>100%<span>Lorem.</span></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores perferendis laudantium rem eum voluptate nostrum itaque non quas officia, architecto commodi consequuntur minima saepe hic ea impedit error quibusdam aperiam.</p>
+					<div class="benefits_bl">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 txt_100">
+							<div>
+								<h2>100%<span>${{index.five100Title}}$</span></h2>
+								<p>${{index.five100Txt}}$</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 txt_100">
+							<div>
+								<h2>100%<span>${{index.six100Title}}$</span></h2>
+								<p>${{index.six100Txt}}$</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 txt_100">
-						<h2>100%<span>Lorem.</span></h2>
-						<p>Pariatur inventore maiores consectetur cupiditate quasi ut. Obcaecati magnam cumque autem dolores vero, accusamus earum. Culpa, aliquam necessitatibus quaerat exercitationem modi officia saepe quam dolor repudiandae minus! Ipsum, molestias, a.</p>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 txt_100">
-						<h2>100%<span>Lorem.</span></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores perferendis laudantium rem eum voluptate nostrum itaque non quas officia, architecto commodi consequuntur minima saepe hic ea impedit error quibusdam aperiam.</p>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 txt_100">
-						<h2>100%<span>Lorem.</span></h2>
-						<p>Pariatur inventore maiores consectetur cupiditate quasi ut. Obcaecati magnam cumque autem dolores vero, accusamus earum. Culpa, aliquam necessitatibus quaerat exercitationem modi officia saepe quam dolor repudiandae minus! Ipsum, molestias, a.</p>
-					</div>
-					<h3 class="question">Lorem ipsum dolor sit amet?</h3>
+					<h3 class="question">${{index.question}}$</h3>
 				</div>
 			</div>
 		</div>
-		<div class="form wrapper">
+		<div class="form form_1 wrapper">
 			<div class="inner container">
 				<div class="row">
 					<!-- FORM BLOCK -->
@@ -95,13 +114,13 @@
 		<div class="folio wrapper" id="folio">
 			<div class="inner container">
 				<div class="row">
-					<h2>Lorem.</h2>
+					<h2>фотогалерея</h2>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 servise serv_1">
 						<div class="serv_bg">
 							<div class="serv_info">
 								<div>
-									<h2>Lorem ipsum.</h2>
-									<a href="folio.html">link...</a>
+									<p>${{index.nails}}$</p>
+									<a href="folio.html">${{index.moreLink}}$</a>
 								</div>
 							</div>
 						</div>
@@ -110,8 +129,8 @@
 						<div class="serv_bg">
 							<div class="serv_info">
 								<div>
-									<h2>Lorem ipsum.</h2>
-									<a href="/folio.html">link...</a>
+									<p>${{index.hair}}$</p>
+									<a href="/folio.html">${{index.moreLink}}$</a>
 								</div>
 							</div>
 						</div>
@@ -120,8 +139,8 @@
 						<div class="serv_bg">
 							<div class="serv_info">
 								<div>
-									<h2>Lorem ipsum.</h2>
-									<a href="/folio.html">link...</a>
+									<p>${{index.lash}}$</p>
+									<a href="/folio.html">${{index.moreLink}}$</a>
 								</div>
 							</div>
 						</div>
@@ -130,8 +149,8 @@
 						<div class="serv_bg">
 							<div class="serv_info">
 								<div>
-									<h2>Lorem ipsum.</h2>
-									<a href="/folio.html">link...</a>
+									<p>${{index.masseur}}$</p>
+									<a href="/folio.html">${{index.moreLink}}$</a>
 								</div>
 							</div>
 						</div>
@@ -139,7 +158,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="form wrapper" id="form">
+		<div class="form form_2 wrapper" id="form">
 			<div class="inner container">
 				<div class="row">
 					<!-- FORM BLOCK -->

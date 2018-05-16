@@ -7,7 +7,7 @@ $(".navbar-nav li a").click(function(event) {
 //sticky menu
 $(function(){
 	$(window).scroll(function() {
-		if($(this).scrollTop() >= 420) {
+		if($(this).scrollTop() >= 555) {
 			$('nav.navbar').addClass('sticky-top-nav');
 		}
 		else{
