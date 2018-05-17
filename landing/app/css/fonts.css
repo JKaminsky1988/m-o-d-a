@@ -34,3 +34,9 @@
   src: url("../fonts/montserrat/montserrat-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-regular.woff") format("woff"), url("../fonts/montserrat/montserrat-regular.ttf") format("truetype"), url("../fonts/montserrat/montserrat-regular.svg#montserratregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'montserratextralight_italic';
+  src: url("../fonts/montserrat/montserrat-extralightitalic.eot");
+  src: url("../fonts/montserrat/montserrat-extralightitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-extralightitalic.woff2") format("woff2"), url("../fonts/montserrat/montserrat-extralightitalic.woff") format("woff"), url("../fonts/montserrat/montserrat-extralightitalic.ttf") format("truetype"), url("../fonts/montserrat/montserrat-extralightitalic.svg#montserratextralight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }

@@ -26,8 +26,11 @@ module.exports = {
     sendBtn: 'записатися',
 
     // form ========================================
-    userName: '[^а-яА-ЯїЇєЄіІёЁ\s]+${3,25}',
-    form: '<form action="" id="form">\n    <div class="user_name_bl">\n        <input type="text" placeholder="Name" name="user_name" pattern="${{common.userName}}$" required >\n        <label for="user_name">Name</label>\n    </div>\n    <div class="user_phone_bl">\n        <input type="tel" class="user_phone" placeholder="Phone" name="user_phone" pattern="^[0-9-+\\s()]*$" required>\n        <label for="user_phone">Phone</label>\n    </div>\n    <div class="user_comment_bl">\n        <textarea name="user_comment" placeholder="Comment"></textarea>\n        <label for="user_comment">Comment</label>\n    </div>\n    <div class="button_bl">\n        <button class="data_send_btn">${{common.sendBtn}}$</button>\n    </div>\n</form>',
+    userNamePat: '[^а-яА-ЯїЇєЄіІёЁ\s]+${3,25}',
+    userName: 'Ім\'я',
+    userPhone: 'Номер',
+    userMessage: 'Повідомлення',
+    form: '<form class="col-xs-12" action="" id="form">\n    <div class="user_name_bl">\n        <input type="text" placeholder="${{common.userName}}$" name="user_name" pattern="${{common.userNamePat}}$" required >\n        <label for="user_name">${{common.userName}}$</label>\n    </div>\n    <div class="user_phone_bl">\n        <input type="tel" class="user_phone" placeholder="${{common.userPhone}}$" name="user_phone" pattern="^[0-9-+\\s()]*$" required>\n        <label for="user_phone">${{common.userPhone}}$</label>\n    </div>\n    <div class="user_comment_bl">\n        <textarea name="user_comment" placeholder="${{common.userMessage}}$"></textarea>\n        <label for="user_comment">${{common.userMessage}}$</label>\n    </div>\n    <div class="button_bl">\n        <button class="data_send_btn">${{common.sendBtn}}$</button>\n    </div>\n</form>',
 
     // contacts ========================================
     adress: '<p>вул. Є. Чавдар, 12</p>\n                            <p>ст. м. Осокорки</p>\n                            <p>тел.: <a href="tel:+380503876351">+38(050) 387-63-51</a></p>',

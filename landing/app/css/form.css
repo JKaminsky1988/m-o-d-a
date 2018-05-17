@@ -1,14 +1,13 @@
-.form_1 {
-  background-image: url(../img/bg/bg_2.png);
+.form {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
 
+.form_1 {
+  background-image: url(../img/bg/bg_2.png); }
+
 .form_2 {
-  background-image: url(../img/bg/bg_3.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-image: url(../img/bg/bg_3.png); }
 
 form > div {
   width: 100%;

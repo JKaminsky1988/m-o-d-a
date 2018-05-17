@@ -1,16 +1,16 @@
 @import "variables";
 @import "mixins";
 
+.form {
+  @include bg_cover;
+}
+
 .form_1 {
   background-image: url(../img/bg/bg_2.png);
-
-  @include bg;
 }
 
 .form_2 {
   background-image: url(../img/bg/bg_3.png);
-
-  @include bg;
 }
 
 form {

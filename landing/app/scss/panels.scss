@@ -1,0 +1,145 @@
+@import "variables";
+@import "mixins";
+
+.panel-heading {
+  background-color: $black;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  @include clean;
+  @include p-x-15;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 65px;
+    line-height: 65px;
+
+    a {
+      color: $pink;
+      font-weight: 100;
+      text-decoration: none;
+
+      &.to_price,
+      &.to_gallery {
+        span {
+          font-size: 16px;
+        }
+      }
+
+      &:hover {
+        color: $peach;
+      }
+    }
+  }
+}
+
+.panel_title {
+  float: left;
+  margin-bottom: 0;
+}
+
+.panel-body {
+  max-height: 500px;
+
+  img {
+    margin-bottom: 30px;
+  }
+}
+
+.panel-body {
+  padding-top: 30px;
+  max-height: 500px;
+  overflow: auto;
+  border-left: 2px solid $black;
+  border-right: 2px solid $black;
+  border-bottom: 2px solid $black;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $black;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+.price_title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service_bl {
+  position: relative;
+
+  .service_name {
+    padding-top: 30px;
+    border-top: 1px solid #000;
+    padding-bottom: 15px;
+    font-family: $mon_bold;
+    position: relative;
+  }
+
+  .service_price {
+    padding-bottom: 30px;
+    font-size: 18px;
+
+    @include clean;
+
+    p {
+      .price {
+        display: block;
+      }
+    }
+  }
+}
+
+.gallery {
+  .to_price {
+    float: right;
+    margin-bottom: 0;
+  }
+}
+
+.price {
+  .to_gallery {
+    float: right;
+    margin-bottom: 0;
+  }
+
+  .service_name,
+  .service_price {
+    text-align: center;
+  }
+}
+
+.master {
+  margin-top: 2px;
+}
+
+// description
+span.description {
+  font-family: $mon_bold_i;
+  position: relative;
+
+  &[aria-label]:hover {
+    &::after {
+      width: 220px;
+      position: absolute;
+      top: 22px;
+      left: 50%;
+      padding: 10px 15px;
+      content: attr(aria-label);
+      transform: translateX(-100px);
+      background-color: #DB3;
+      z-index: 2;
+      font-size: 12px;
+      font-family: $mon;
+    }
+  }
+}

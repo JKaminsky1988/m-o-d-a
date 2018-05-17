@@ -11,19 +11,17 @@
 		<div class="lang_btn_bl">
 			${{common.langBtn}}$
 		</div>
-		<div class="header wrapper">
-			<!-- HEADER -->
+		<!-- HEADER -->
+		<div class="header wrapper" id="top">
 			<div class="inner container">
-				<div class="row">
-					<div class="logo_header col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<a class="" href="/${{common.localLang}}$/"></a>
-					</div>
+				<div class="logo_header logo">
+					<a class="" href="/${{common.localLang}}$/"></a>
 				</div>
-				<h1>Lorem ipsum dolor.</h1>
+				<h1>${{common.h1}}$</h1>
 				<!-- NAVBAR COMPONENT -->
 				<div class="nav_bl">
-					<nav class="navbar navbar-default">
-						<div class="container-fluid">
+					<nav class="navbar">
+						<div class="container">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 								<span class="sr-only">Toggle navigation</span>
@@ -34,8 +32,8 @@
 							</div>
 							<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 								<ul class="nav navbar-nav nav_header">
-									<li><a class="scroll" href="../index.html#about">${{common.aboutLink}}$</a></li>
-									<li><a class="scroll" href="#gallery">${{common.folioLink}}$</a></li>
+									<li><a class="scroll" href="#about">${{common.aboutLink}}$</a></li>
+									<li><a class="scroll" href="#folio">${{common.folioLink}}$</a></li>
 									<li><a class="scroll" href="/price.html">${{common.priceLink}}$</a></li>
 									<li><a class="scroll" href="/shop.html">${{common.shopLink}}$</a></li>
 									<li><a class="scroll" href="#review">${{common.reviewsLink}}$</a></li>
@@ -45,81 +43,89 @@
 						</div>
 					</nav>
 				</div>
+				<!-- about -->
+				<div class="row">
+					<p class="hello_txt">${{index.helloTxt}}$</p>
+					<div class="button_bl">
+						<a href="#form" class="data_send_btn scroll">${{common.sendBtn}}$</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="gallery wrapper" id="gallery">
 			<div class="inner container">
 				<div class="row">
-					<div class="panel-group" id="accordion">
-						<div class="panel panel-default">
+					<h2>фотогалерея</h2>
+					<div class="panel-group col-xs-12" id="accordion">
+						<div class="panel">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-									<p class="panel_title">Ногтевая эстетика</p>
-									<p class="to_price"><a href="/price.html">$</a></p>
+								<a class="panel_title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									<span>Ногтевая эстетика</span>
 								</a>
+									<a class="to_price" href="/price.html"><span>price</span></a>
 								</h4>
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse">
 								<div class="panel-body">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
 								</div>
 							</div>
 						</div>
-						<div class="panel panel-default">
+						<div class="panel">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-									<p class="panel_title">Ресничный мастер</p>
-									<p class="to_price"><a href="/price.html">$</a></p>
+								<a class="panel_title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									<span>Ресничный мастер</span>
 								</a>
+									<a class="to_price" href="/price.html"><span>price</span></a>
 								</h4>
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse">
 								<div class="panel-body">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
 								</div>
 							</div>
 						</div>
-						<div class="panel panel-default">
+						<div class="panel">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-									<p class="panel_title">Парикмахерские услуги</p>
-									<p class="to_price"><a href="/price.html">$</a></p>
+								<a class="panel_title" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									<span>Парикмахерские услуги</span>
 								</a>
+									<a class="to_price" href="/price.html"><span>price</span></a>
 								</h4>
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse">
 								<div class="panel-body">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
 								</div>
 							</div>
 						</div>
-						<div class="panel panel-default">
+						<div class="panel">
 							<div class="panel-heading">
 								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-									<p class="panel_title">Услуги массажиста</p>
-									<p class="to_price"><a href="/price.html">$</a></p>
+								<a class="panel_title" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+									<span>Услуги массажиста</span>
 								</a>
+									<a class="to_price" href="/price.html"><span>price</span></a>
 								</h4>
 							</div>
 							<div id="collapseFour" class="panel-collapse collapse">
 								<div class="panel-body">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
-									<img class="col-lg-3 col-md-4 col-sm-6 col-xs-12" src="img/test-img.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
+									<img class="col-lg-4 col-md-4 col-sm-4 col-xs-12" src="../img/folio/nail_1.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -127,10 +133,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="button_bl call_modal">
-			<button class="btn btn-default btn-lg light_btn" data-toggle="modal" data-target="#myModal">
-			Lorem.
-			</button>
+		<div class="button_bl">
+			<button class="data_send_btn scroll" data-toggle="modal" data-target="#myModal">${{common.sendBtn}}$</button>
 		</div>
 		<div class="review wrapper" id="review">
 			<div class="inner container">
@@ -138,31 +142,27 @@
 					<div class="reviews-slider">
 						<ul class="bxslider">
 							<li>
-								<div class="rewiev_slide">
-									<img src="../img/test-img.png" alt="">
-									<p class="rewiev_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, molestias consectetur sit, reiciendis iusto aperiam excepturi at tenetur fugiat nam dolorem saepe consequuntur laborum, adipisci, odit! Explicabo optio, deleniti sint!</p>
-									<a href="">social link...</a>
+								<div class="review_slide review_slide_1">
+									<div class="img"></div>
+									<p class="rewiev_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, molestias consectetur sit, reiciendis iusto aperiam excepturi at tenetur fugiat nam dolorem saepe consequuntur laborum, adipisci, odit! Explicabo optio, deleniti sint!<a href="">Яна...</a></p>
 								</div>
 							</li>
 							<li>
-								<div class="rewiev_slide">
-									<img src="../img/test-img.png" alt="">
-									<p class="rewiev_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, voluptates totam vel adipisci veritatis neque quia! Molestiae, minus dolore, earum totam sequi ex animi veniam id sint praesentium eveniet quis.</p>
-									<a href="">social link...</a>
+								<div class="review_slide review_slide_2">
+									<div class="img"></div>
+									<p class="rewiev_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, voluptates totam vel adipisci veritatis neque quia! Molestiae, minus dolore, earum totam sequi ex animi veniam id sint praesentium eveniet quis.<a href="">Яна...</a></p>
 								</div>
 							</li>
 							<li>
-								<div class="rewiev_slide">
-									<img src="../img/test-img.png" alt="">
-									<p class="rewiev_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque illum, aspernatur reprehenderit magni cum veniam esse mollitia, hic fugit officiis ex sunt odio autem tempore suscipit pariatur dolor, tenetur earum!</p>
-									<a href="">social link...</a>
+								<div class="review_slide review_slide_3">
+									<div class="img"></div>
+									<p class="rewiev_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque illum, aspernatur reprehenderit magni cum veniam esse mollitia, hic fugit officiis ex sunt odio autem tempore suscipit pariatur dolor, tenetur earum!<a href="">Яна...</a></p>
 								</div>
 							</li>
 							<li>
-								<div class="rewiev_slide">
-									<img src="../img/test-img.png" alt="">
-									<p class="rewiev_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente necessitatibus facere, nisi aspernatur totam eveniet praesentium, magni enim voluptate architecto non. Voluptate minima qui sequi eaque, quidem ut aspernatur officiis!</p>
-									<a href="">social link...</a>
+								<div class="review_slide review_slide_4">
+									<div class="img"></div>
+									<p class="rewiev_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente necessitatibus facere, nisi aspernatur totam eveniet praesentium, magni enim voluptate architecto non. Voluptate minima qui sequi eaque, quidem ut aspernatur officiis!<a href="">Яна...</a></p>
 								</div>
 							</li>
 						</ul>
@@ -173,23 +173,29 @@
 		<div class="footer" id="contact">
 			<div class="inner container">
 				<div class="row">
-					<div class="contacts col-lg-4 col-md-4 col-sm-4 col-xs-12">
-						<div class="logo_footer">
-							<a href="/${{common.localLang}}$/"></a>
-						</div>
-						<div class="contacts_info">
-							<p>${{common.adress}}$</p>
+					<div class="contacts col-lg-4 col-md-4 col-sm-5 col-xs-12">
+						<div>
+							<div class="logo_footer logo">
+								<a href="/${{common.localLang}}$/"></a>
+							</div>
+							<div class="contacts_info">
+								${{common.adress}}$
+								<div class="social">
+									<a href="#" class="facebook"></a>
+									<a href="#" class="vk"></a>
+									<a href="#" class="instagram"></a>
+									<a href="#" class="viber"></a>
+									<a href="#" class="telegram"></a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="map" id="map"></div>
-			<div class="social">
-				<a href="#">22</a>
-				<a href="#">22</a>
-				<a href="#">22</a>
-			</div>
 		</div>
+		<div class="copyright">Все права защищены. 2018.</div>
+		<div class="dev"><a href="mailto:jainekaminsky@gmail.com">JKaminsky developer</a></div>
 		<div class="modal_bl">
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
@@ -199,7 +205,7 @@
 						</div>
 						<div class="modal-body">
 							<!-- FORM BLOCK -->
-							<div class="form_block">${{common.form}}$</div>
+							<div class="form_block col-xs-12">${{common.form}}$</div>
 						</div>
 						<div class="modal-footer">
 							<div class="button_bl">
@@ -210,6 +216,7 @@
 				</div>
 			</div>
 		</div>
+		${{common.topBtn}}$
 		<!-- scripts -->
 		${{common.urlJs}}$
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlgAOsKbAIb9CgqoeHpqmZ6fzyV1OYJEA&callback=initMap" type="text/javascript"></script>
