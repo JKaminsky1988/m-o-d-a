@@ -18,6 +18,11 @@
   padding-bottom: 100px;
 }
 
+@mixin p-y-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 @mixin clean {
   &::after {
     content: "";
@@ -27,14 +32,19 @@
 }
 
 // COLORS
-@mixin bgBlack {
+@mixin bgBlack1 {
+  background: $black;
+  color: $peach;
+}
+
+@mixin bgBlack2 {
   background: $black;
   color: $pink;
 }
 
-@mixin bgPink {
-  background: $pink;
-  color: $black;
+@mixin bgPeach {
+  background: $peach;
+  color: $white;
 }
 
 @mixin l-s-1 {
@@ -43,10 +53,16 @@
 }
 
 // BACKGROUNDS
-@mixin bg {
+@mixin bg_cover {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@mixin bg_contain {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 // LINKS

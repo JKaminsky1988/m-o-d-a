@@ -2,159 +2,175 @@
 @import "mixins";
 
 @media (min-width: 768px) {
-  // CONTAINERS ===================================
-  .wrapper {}
+    // CONTAINERS ===================================
+    .wrapper {}
 
-  .inner {}
+    .inner {}
 
-  .col-lg-2_5 {
-    float: left;
-    width: (100% / 5);
-  }
+    .col-lg-2_5 {
+        float: left;
+        width: (100% / 5);
+    } // LOGOS ===================================
+    .logo_footer {
+        float: none;
 
-  // LOGOS ===================================
-  .logo_footer {
-    float: none;
-
-    @include m-x-auto;
-  }
-
-  // TEXT ===================================
-  .benefits_bl {
-    @include clean;
-  }
-
-  .txt_100 {
-    @include clean;
-
-    // min-height: 370px;
-
-    &:nth-child(odd) {
-      > div {
-        padding-right: 45px;
-      }
+        @include m-x-auto;
+    } // TEXT ===================================
+    .benefits_bl {
+        @include clean;
     }
 
-    &:nth-child(even) {
-      > div {
-        padding-left: 45px;
-      }
+    .txt_100 {
+        @include clean; // min-height: 370px;
+        &:nth-child(odd) {
+            >div {
+                padding-right: 45px;
+            }
+        }
+
+        &:nth-child(even) {
+            >div {
+                padding-left: 45px;
+            }
+        }
     }
-  }
 
-  .bold {
-    font-weight: bold;
-  }
+    .bold {
+        font-family: $mon_bold;
+    }
+    .bold_i {
+        font-family: $mon_bold_i;
+    } // TITLES ===================================
+    h1,
+    h2,
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
-  // TITLES ===================================
-  h1, h2, h3 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+    h1,
+    h2 {
+        font-size: 73px;
+    } // NAVIGATION ===================================
+    .nav_bl {
+        height: 72px;
+    }
 
-  // NAVIGATION ===================================
-  nav.navbar {
-    position: relative;
+    nav.navbar {
+        position: relative;
 
-    &.sticky-top-nav {
-      position: fixed !important;
-      top: 0;
-      left: 0;
-      right: 0;
+        &.sticky-top-nav {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            right: 0;
 
-      .nav_header {
-        width: 100% - 4;
+            .nav_header {
+                width: 100% - 4;
+
+                >li {
+                    width: (100% / 6);
+
+                    >a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .container-fluid,
+        .navbar-collapse {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .navbar .nav_header {
+        padding-right: 30px;
 
         li {
-          width: (100% / 6);
+            width: (100% / 6);
         }
-      }
+    } // BUTTONS ===================================
+    // FORMS ===================================
+    // FOLIO ===================================
+    // CAROUSEL ===================================
+    .bxslider {
+        .rewiev_slide {
+            text-align: center;
+            width: 88%;
+            margin-left: 7%;
+        }
+
+        .img {
+            width: 30%;
+        }
+
+        .rewiev_txt {
+            padding-top: 30px;
+        }
+    } //FOOTER ===================================
+    .footer {
+        max-height: 450px;
+
+        .inner {
+            max-height: 450px;
+        }
+
+        #map {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute !important;
+            z-index: 2;
+            top: 0px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .contacts {
+            min-height: 450px;
+            z-index: 3;
+
+            .contacts_info {
+                display: block;
+                padding-top: 30px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
     }
-
-    .container-fluid,
-    .navbar-collapse {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  .navbar .nav_header {
-    li {
-      width: (100% / 6);
-    }
-  }
-
-  // BUTTONS ===================================
-
-  // FORMS ===================================
-
-  // FOLIO ===================================
-
-  // CAROUSEL ===================================
-  .bxslider {
-    .rewiev_slide {
-      text-align: center;
-      width: 88%;
-      margin-left: 7%;
-    }
-
-    img {
-      width: 30%;
-
-      @include vertical;
-    }
-
-    .rewiev_txt {
-      width: 70%;
-      padding-top: 30px;
-
-      @include vertical;
-    }
-  }
-
-  //FOOTER ===================================
-  .footer {
-    min-height: 500px;
-
-    .inner {
-      min-height: 500px;
-    }
-
-    #map {
-      overflow: hidden;
-      width: 100%;
-      height: 500px;
-      position: absolute !important;
-      z-index: 2;
-      top: 0px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-
-    .contacts {
-      min-height: 500px;
-      z-index: 3;
-
-      .contacts_info {
-        float: none;
-      }
-    }
-  }
 }
 
 @media (max-width: 995px) {
-  .txt_100 {
-    &:nth-child(odd) {
-      > div {
-        padding-right: 0px;
-      }
+    .txt_100 {
+        &:nth-child(odd) {
+            >div {
+                padding-right: 0px;
+            }
+        }
+
+        &:nth-child(even) {
+            >div {
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        font-size: 16px;
     }
 
-    &:nth-child(even) {
-      > div {
-        padding-left: 0px;
-      }
+    .logo_footer {
+        display: block;
+
+        @include m-x-auto;
     }
-  }
+
+    .contacts .contacts_info {
+        @include p-x-0;
+    }
 }

@@ -1,14 +1,36 @@
-.form_1 {
-  background-image: url(../img/bg/bg_2.png);
+.form {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; }
 
+.form_1 {
+  background-image: url(../img/bg/bg_2.png); }
+
 .form_2 {
-  background-image: url(../img/bg/bg_3.png);
+  background-image: url(../img/bg/bg_3.png); }
+
+.modal {
+  padding-right: 0 !important; }
+
+.modal-content {
+  background-color: #262626; }
+
+.modal-header {
+  border: none; }
+
+button.close {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  text-shadow: none;
+  background-image: url(../img/cross-out.svg);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
+  button.close:hover {
+    opacity: 1;
+    color: #febbab;
+    background-image: url(../img/cross-out_h.svg); }
 
 form > div {
   width: 100%;
@@ -85,12 +107,13 @@ form > div {
   form > div textarea {
     padding: 0 10px 3px 10px;
     max-width: 540px;
+    max-height: 100px !important;
+    min-height: 36px;
+    border-radius: 0;
+    border-right: 2px solid #febbab;
     border-top: none;
     border-left: none;
-    max-height: 300px !important;
-    resize: none;
-    border-radius: 0;
-    border-right: 2px solid #febbab; }
+    resize: none; }
     form > div textarea:-moz-placeholder {
       color: #febbab;
       font-size: 18px; }
@@ -107,6 +130,6 @@ form > div {
       width: 7px;
       background-color: transparent; }
     form > div textarea::-webkit-scrollbar-thumb {
-      background-color: #febbab; }
+      background-color: #d95d3b; }
     form > div textarea::-webkit-scrollbar-corner {
       background-color: transparent; }

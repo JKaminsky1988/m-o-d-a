@@ -28,29 +28,25 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+.logo a {
+  display: block;
+  position: relative;
+  padding-top: 100%;
+  background-image: url(../img/logo.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
 .logo_header {
   float: none;
   max-width: 350px;
   margin-left: auto;
   margin-right: auto; }
-  .logo_header a {
-    display: block;
-    position: relative;
-    padding-top: 100%;
-    background-image: url(../img/logo.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover; }
 
 .logo_footer {
-  width: 100px;
-  float: left; }
-  .logo_footer a {
-    display: block;
-    position: relative;
-    padding-top: 100%;
-    background-image: url(../img/test-img.png);
-    background-size: contain; }
+  width: 150px;
+  display: inline-block;
+  vertical-align: middle; }
 
 .hello_txt {
   width: 100%;
@@ -64,7 +60,8 @@ body {
   .txt_100 h2 {
     font-size: 73px;
     line-height: 1;
-    font-weight: 100; }
+    font-weight: 100;
+    font-family: "gogoiaregular"; }
     .txt_100 h2 span {
       font-size: 50px;
       color: #d95d3b;
@@ -78,11 +75,17 @@ body {
 
 .italic {
   display: block;
-  font-style: italic;
-  font-weight: normal; }
+  font-family: "montserratitalic";
+  font-size: 16px; }
+
+h1,
+h2,
+h3 {
+  font-family: "gogoiaregular";
+  text-align: center; }
 
 h1 {
-  font-size: 73px;
+  font-size: 45px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #262626; }
@@ -91,19 +94,13 @@ h1 {
   font-family: "gogoiadeco";
   display: inline-block; }
 
-h1, h2, h3 {
-  font-family: "gogoiaregular";
-  text-align: center; }
-
 h2 {
-  font-size: 73px; }
+  font-size: 45px; }
   h2 span {
     display: block; }
 
-.nav_bl {
-  height: 72px; }
-
 nav.navbar {
+  min-width: 320px;
   position: fixed;
   top: 0;
   left: 0;
@@ -115,19 +112,29 @@ nav.navbar {
 
 .navbar-toggle {
   float: left;
-  margin-left: 15px; }
+  margin-left: 30px;
+  font-size: 18px; }
+  .navbar-toggle span {
+    background-color: #febbab; }
+  .navbar-toggle:hover span {
+    background-color: #d95d3b; }
+
+.navbar * {
+  z-index: 11; }
 
 .navbar .nav_header {
   width: 100%;
-  padding-right: 30px;
   margin-left: auto;
   margin-right: auto; }
   .navbar .nav_header > li {
     text-align: center;
-    width: 16.6666666667%; }
+    width: 100%; }
+    .navbar .nav_header > li + li {
+      -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
     .navbar .nav_header > li > a {
       color: #febbab;
-      font-size: 18px;
+      font-size: 16px;
       letter-spacing: 1px; }
       .navbar .nav_header > li > a:hover, .navbar .nav_header > li > a:focus {
         color: #d95d3b;
@@ -148,15 +155,15 @@ nav.navbar {
     letter-spacing: 1px;
     border: none;
     font-family: "montserratbold";
-    background: #febbab;
-    color: #262626;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    background: #d95d3b;
+    color: #fff6ef; }
     .button_bl .data_send_btn:hover {
       text-decoration: none;
-      background-color: #262626;
-      color: #d95d3b;
-      outline: 2px solid #d95d3b; }
+      outline: 2px solid #d95d3b;
+      background: #262626;
+      color: #d95d3b; }
 
 .lang_btn_bl {
   position: fixed;
@@ -173,12 +180,12 @@ nav.navbar {
     border: none;
     font-size: 14px; }
     .lang_btn_bl button:hover {
-      background-color: #262626;
+      background: #262626;
       color: #d95d3b; }
   .lang_btn_bl .open button {
     border-radius: 0;
     background: #262626;
-    color: #febbab; }
+    color: #d95d3b; }
   .lang_btn_bl .open .dropdown-menu {
     background-color: #262626;
     border-radius: 0;
@@ -268,14 +275,10 @@ nav.navbar {
 .bxslider {
   overflow: hidden;
   padding-top: 30px; }
-  .bxslider img {
-    max-width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    margin-left: auto;
-    margin-right: auto; }
   .bxslider .rewiev_txt {
-    text-align: center; }
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px; }
   .bxslider a {
     display: block;
     text-align: center;
@@ -283,9 +286,25 @@ nav.navbar {
     .bxslider a:hover {
       text-decoration: none; }
   .bxslider a {
-    color: #262626; }
+    color: #262626;
+    margin-top: 20px; }
     .bxslider a:hover {
       color: #d95d3b; }
+
+.review_slide {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  .review_slide .img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url(../img/review/003_IMG_6948.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .bx-prev,
 .bx-next {
@@ -293,57 +312,100 @@ nav.navbar {
 
 .footer {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  border-top: 15px solid #fff6ef; }
   .footer #map {
     min-height: 320px;
     overflow: hidden;
     position: relative; }
-  .footer .contacts {
-    background-color: rgba(255, 255, 255, 0.7);
-    text-align: center; }
-    .footer .contacts .contacts_info {
-      display: inline-block; }
+
+.contacts {
+  background-color: #fff6ef;
+  padding-top: 50px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .contacts > div {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .contacts .contacts_info {
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    vertical-align: middle; }
+    .contacts .contacts_info a {
+      color: #262626;
+      text-decoration: none; }
+      .contacts .contacts_info a:hover {
+        color: #d95d3b; }
 
 .social {
   height: 65px;
   text-align: center; }
   .social a {
-    line-height: 65px; }
+    line-height: 65px;
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .social a.instagram {
+      background-image: url(../img/social/instagram.svg); }
+      .social a.instagram:hover {
+        background-image: url(../img/social/instagram_h.svg); }
+    .social a.vk {
+      background-image: url(../img/social/vk.svg); }
+      .social a.vk:hover {
+        background-image: url(../img/social/vk_h.svg); }
+    .social a.facebook {
+      background-image: url(../img/social/facebook.svg); }
+      .social a.facebook:hover {
+        background-image: url(../img/social/facebook_h.svg); }
+    .social a.viber {
+      background-image: url(../img/social/viber.svg); }
+      .social a.viber:hover {
+        background-image: url(../img/social/viber_h.svg); }
+    .social a.telegram {
+      background-image: url(../img/social/telegram.svg); }
+      .social a.telegram:hover {
+        background-image: url(../img/social/telegram_h.svg); }
+
+.copyright {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  background: #fff6ef;
+  font-size: 18px; }
+
+.dev {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  background: #fff6ef;
+  font-size: 10px; }
+  .dev a {
+    color: #262626; }
+    .dev a:hover {
+      color: #d95d3b; }
 
 .service_bl .new,
-.service_bl .sale,
-.service_bl .info {
+.service_bl .sale {
   position: absolute;
   top: 1px;
-  width: 36px;
-  padding: 5px;
-  text-align: center; }
+  width: auto;
+  padding: 2px 5px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff; }
+
 .service_bl .new {
-  background-color: pink;
+  background-color: #F62459;
   left: 15px; }
+
 .service_bl .sale {
-  background-color: #FFDD00;
+  background-color: #0ED771;
   left: 15px; }
-.service_bl .info {
-  background-color: #7FFFD4;
-  right: 15px; }
-
-span.description {
-  font-style: italic;
-  font-weight: bold;
-  position: relative; }
-  span.description[aria-label]:hover::after {
-    content: attr(aria-label);
-    width: 200px;
-    position: absolute;
-    bottom: 22px;
-    left: 50%;
-    transform: translateX(-100px);
-    display: block;
-    background-color: #DB3;
-    padding: 10px 15px;
-    z-index: 2; }
-
-.service_bl:first-child .service_name span.description[aria-label]:hover::after {
-  top: 22px;
-  bottom: auto; }
