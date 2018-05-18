@@ -60,12 +60,13 @@ body {
   .txt_100 h2 {
     font-size: 73px;
     line-height: 1;
-    font-weight: 100; }
+    font-weight: 100;
+    font-family: "gogoiaregular"; }
     .txt_100 h2 span {
       font-size: 50px;
       color: #d95d3b;
       line-height: 0.2;
-      font-family: "montserratbold";
+      font-weight: bold;
       letter-spacing: 1px; }
 
 .question {
@@ -74,10 +75,12 @@ body {
 
 .italic {
   display: block;
-  font-family: "montserratextralight_italic";
+  font-family: "montserratitalic";
   font-size: 16px; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "gogoiaregular";
   text-align: center; }
 
@@ -118,6 +121,7 @@ nav.navbar {
 
 .navbar * {
   z-index: 11; }
+
 .navbar .nav_header {
   width: 100%;
   margin-left: auto;
@@ -397,9 +401,11 @@ nav.navbar {
   text-align: center;
   font-size: 14px;
   color: #fff; }
+
 .service_bl .new {
   background-color: #F62459;
   left: 15px; }
+
 .service_bl .sale {
   background-color: #0ED771;
   left: 15px; }

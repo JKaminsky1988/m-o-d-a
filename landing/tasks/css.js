@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var scss = require('gulp-scss');
+var scss = require('gulp-sass');
 var minCss = require('gulp-cssmin');
 var rename = require("gulp-rename");
 var browserSync = require('browser-sync');
@@ -18,8 +18,7 @@ gulp.task('scss', function() {
             './app/scss/media.scss'
         ]) // беру все scss-ки поочереди
         .pipe(scss()) // компилирую их в css
-
-    .pipe(gulp.dest('./app/css')) // кладу их в папку css/
+        .pipe(gulp.dest('./app/css')) // кладу их в папку css/
 });
 
 
