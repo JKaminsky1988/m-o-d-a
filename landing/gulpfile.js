@@ -1,1 +1,1 @@
-require('require-dir')('./tasks/', {recurse: true})
+require('require-dir')('./tasks/', { recurse: true });
