@@ -1,5 +1,5 @@
 {
-  "name": "moda",
+  "name": "m-o-d-a",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "dependencies": {
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.favorit:frontend/betinvest_www.git"
+    "url": "https://github.com/JKaminsky1988/m-o-d-a.git"
   },
   "author": "",
   "license": "ISC",
