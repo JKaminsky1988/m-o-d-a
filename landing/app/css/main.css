@@ -159,7 +159,7 @@ nav.navbar {
     padding-right: 15px;
     background: #d95d3b;
     color: #fff6ef; }
-    .button_bl .data_send_btn:hover {
+    .button_bl .data_send_btn:hover, .button_bl .data_send_btn:focus {
       text-decoration: none;
       outline: 2px solid #d95d3b;
       background: #262626;
@@ -208,7 +208,7 @@ nav.navbar {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  z-index: 2; }
+  z-index: 10; }
   .top_btn_bl a {
     width: 50px;
     height: 30px;

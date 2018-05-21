@@ -3,552 +3,553 @@
 
 // CONTAINERS ===================================
 body {
-    min-width: 320px;
-    font-size: 20px;
-    font-family: $mon;
+  min-width: 320px;
+  font-size: 20px;
+  font-family: $mon;
 }
 
 .wrapper {
-    position: relative;
-    padding-top: 72px;
+  position: relative;
+  padding-top: 72px;
 
-    @include p-x-15;
-    @include p-y-100;
+  @include p-x-15;
+  @include p-y-100;
 }
 
 .container {
-    @include p-x-0;
+  @include p-x-0;
 }
 
 .header {
-    background-image: url(../img/bg/header_bg.png);
+  background-image: url(../img/bg/header_bg.png);
 
-    @include bg_cover;
+  @include bg_cover;
 }
 
 .inner {
-    width: 100%;
-    max-width: 1140px;
-    position: relative;
+  width: 100%;
+  max-width: 1140px;
+  position: relative;
 
-    @include m-x-auto;
+  @include m-x-auto;
 }
 
 // LOGOS ===================================
 .logo {
-    a {
-        display: block;
-        position: relative;
-        padding-top: 100%;
-        background-image: url(../img/logo.png);
+  a {
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    background-image: url(../img/logo.png);
 
-        @include bg_contain;
-    }
+    @include bg_contain;
+  }
 }
 
 .logo_header {
-    float: none;
-    max-width: 350px;
+  float: none;
+  max-width: 350px;
 
-    @include m-x-auto;
+  @include m-x-auto;
 }
 
 .logo_footer {
-    width: 150px;
+  width: 150px;
 
-    @include vertical;
+  @include vertical;
 }
 
 // TEXT ===================================
 .hello_txt {
-    width: 100%;
-    max-width: 700px;
-    text-align: center;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
 
-    @include m-x-auto;
+  @include m-x-auto;
 }
 
 .txt_100 {
-    text-align: center;
+  text-align: center;
 
-    h2 {
-        font-size: 73px;
-        line-height: 1;
-        font-weight: 100;
-        font-family: $gogoia;
+  h2 {
+    font-size: 73px;
+    line-height: 1;
+    font-weight: 100;
+    font-family: $gogoia;
 
-        span {
-            font-size: 50px;
-            color: $peach;
-            line-height: 0.2;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+    span {
+      font-size: 50px;
+      color: $peach;
+      line-height: 0.2;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
+  }
 }
 
 .question {
-    font-size: 50px;
-    letter-spacing: 1px;
+  font-size: 50px;
+  letter-spacing: 1px;
 }
 
 .italic {
-    display: block;
-    font-family: $mon_i;
-    font-size: 16px;
+  display: block;
+  font-family: $mon_i;
+  font-size: 16px;
 }
 
 // TITLES ===================================
 h1,
 h2,
 h3 {
-    font-family: $gogoia;
-    text-align: center;
+  font-family: $gogoia;
+  text-align: center;
 }
 
 h1 {
-    font-size: 45px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: $black;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $black;
 }
 
 .d_letter {
-    font-family: $gogoiaDeco;
-    display: inline-block;
+  font-family: $gogoiaDeco;
+  display: inline-block;
 }
 
 h2 {
-    font-size: 45px;
+  font-size: 45px;
 
-    span {
-        display: block;
-    }
+  span {
+    display: block;
+  }
 }
 
 // NAVIGATION ===================================
 nav.navbar {
-    min-width: 320px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background-color: $black;
-    border-radius: 0;
-    border: none;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: $black;
+  border-radius: 0;
+  border: none;
 }
 
 .navbar-toggle {
-    float: left;
-    margin-left: 30px;
-    font-size: 18px;
+  float: left;
+  margin-left: 30px;
+  font-size: 18px;
 
+  span {
+    background-color: $pink;
+  }
+
+  &:hover {
     span {
-        background-color: $pink;
+      background-color: $peach;
     }
-
-    &:hover {
-        span {
-            background-color: $peach;
-        }
-    }
+  }
 }
 
 .navbar {
-    * {
-        z-index: 11;
-    }
+  * {
+    z-index: 11;
+  }
 
-    .nav_header {
-        width: 100%;
+  .nav_header {
+    width: 100%;
 
-        @include m-x-auto;
+    @include m-x-auto;
 
-        >li {
-            text-align: center;
-            width: 100%;
+    > li {
+      text-align: center;
+      width: 100%;
 
-            +li {
-                -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            }
+      + li {
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      }
 
-            >a {
-                color: $pink;
-                font-size: 16px;
-                letter-spacing: 1px;
+      > a {
+        color: $pink;
+        font-size: 16px;
+        letter-spacing: 1px;
 
-                &:hover,
-                &:focus {
-                    color: $peach;
-                    background: none;
-                    outline: none;
-                }
-            }
+        &:hover,
+        &:focus {
+          color: $peach;
+          background: none;
+          outline: none;
         }
+      }
     }
+  }
 }
 
 // BUTTONS ===================================
 .button_bl {
-    text-align: center;
-    height: auto;
-    margin-top: 30px;
+  text-align: center;
+  height: auto;
+  margin-top: 30px;
 
-    .data_send_btn {
-        width: 245px;
-        height: 60px;
-        line-height: 60px;
-        display: inline-block;
-        text-transform: uppercase;
-        font-size: 18px;
-        letter-spacing: 1px;
-        border: none;
-        font-family: $mon_bold;
+  .data_send_btn {
+    width: 245px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+    font-family: $mon_bold;
 
-        @include p-x-15;
-        @include bgPeach;
+    @include p-x-15;
+    @include bgPeach;
 
-        &:hover {
-            text-decoration: none;
-            outline: 2px solid $peach;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      outline: 2px solid $peach;
 
-            @include bgBlack1;
-        }
+      @include bgBlack1;
     }
+  }
 }
 
 .lang_btn_bl {
-    position: fixed;
-    top: 10px;
-    right: 15px;
-    z-index: 101;
-    width: 50px;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 101;
+  width: 50px;
 
-    button {
-        width: 100%;
-        height: 30px;
-        background-color: $black;
-        color: $pink;
-        text-shadow: none;
-        border: none;
-        font-size: 14px;
+  button {
+    width: 100%;
+    height: 30px;
+    background-color: $black;
+    color: $pink;
+    text-shadow: none;
+    border: none;
+    font-size: 14px;
 
-        &:hover {
-            @include bgBlack1;
-        }
+    &:hover {
+      @include bgBlack1;
     }
+  }
 
-    .open {
-        button {
-            border-radius: 0;
+  .open {
+    button {
+      border-radius: 0;
 
-            @include bgBlack1;
-        }
-
-        .dropdown-menu {
-            background-color: $black;
-            border-radius: 0;
-            width: 100%;
-            padding: 0;
-
-            li a {
-                color: #fff;
-
-                &:hover {
-                    @include bgBlack2;
-                }
-            }
-        }
+      @include bgBlack1;
     }
 
     .dropdown-menu {
-        width: auto;
-        min-width: auto;
-        left: 50%;
-        transform: translateX(-50%);
+      background-color: $black;
+      border-radius: 0;
+      width: 100%;
+      padding: 0;
 
-        >li>a {
-            padding: 6px 12px;
+      li a {
+        color: #fff;
+
+        &:hover {
+          @include bgBlack2;
         }
+      }
     }
+  }
+
+  .dropdown-menu {
+    width: auto;
+    min-width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+
+    > li > a {
+      padding: 6px 12px;
+    }
+  }
 }
 
 .top_btn_bl {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 2;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 10;
 
-    a {
-        width: 50px;
-        height: 30px;
-        line-height: 30px;
-        display: block;
-        text-align: center;
-        font-size: 14px;
+  a {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
 
-        @include bgBlack2;
+    @include bgBlack2;
 
-        &:hover {
-            text-decoration: none;
-            color: $peach;
-        }
+    &:hover {
+      text-decoration: none;
+      color: $peach;
     }
+  }
 }
 
 .form_block {
-    width: 100%;
-    max-width: 450px;
+  width: 100%;
+  max-width: 450px;
 
-    @include m-x-auto;
+  @include m-x-auto;
 }
 
 // FOLIO ===================================
 .servise {
-    .serv_bg {
-        margin-bottom: 30px;
-        position: relative;
+  .serv_bg {
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-image: url(../img/folio/nail_1.png);
+
+    @include bg_cover;
+
+    .serv_info {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+
+      > div {
+        position: absolute;
+        bottom: 20px;
         width: 100%;
-        padding-top: 100%;
-        background-image: url(../img/folio/nail_1.png);
+        color: $pink;
 
-        @include bg_cover;
-
-        .serv_info {
-            display: none;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-
-            >div {
-                position: absolute;
-                bottom: 20px;
-                width: 100%;
-                color: $pink;
-
-                p {
-                    text-align: center;
-                    font-family: $mon_bold;
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                }
-
-                @include link;
-
-                a {
-                    color: $pink;
-
-                    &:hover {
-                        color: $peach;
-                    }
-                }
-            }
+        p {
+          text-align: center;
+          font-family: $mon_bold;
+          font-size: 24px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
         }
 
-        &:hover .serv_info {
-            display: block;
+        @include link;
+
+        a {
+          color: $pink;
+
+          &:hover {
+            color: $peach;
+          }
         }
+      }
     }
+
+    &:hover .serv_info {
+      display: block;
+    }
+  }
 }
 
 // CAROUSEL ===================================
 .bx-viewport {
-    height: auto !important;
+  height: auto !important;
 }
 
 .bxslider {
-    overflow: hidden;
-    padding-top: 30px;
+  overflow: hidden;
+  padding-top: 30px;
 
-    .rewiev_txt {
-        text-align: center;
+  .rewiev_txt {
+    text-align: center;
 
-        @include p-x-15;
+    @include p-x-15;
+  }
+
+  @include link;
+
+  a {
+    color: $black;
+    margin-top: 20px;
+
+    &:hover {
+      color: $peach;
     }
-
-    @include link;
-
-    a {
-        color: $black;
-        margin-top: 20px;
-
-        &:hover {
-            color: $peach;
-        }
-    }
+  }
 }
 
 .review_slide {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 
-    .img {
-        max-width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        background-image: url(../img/review/003_IMG_6948.jpg);
+  .img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url(../img/review/003_IMG_6948.jpg);
 
-        @include m-x-auto;
-        @include bg_cover;
-    }
+    @include m-x-auto;
+    @include bg_cover;
+  }
 }
 
 .bx-prev,
 .bx-next {
-    background-size: contain;
+  background-size: contain;
 }
 
 //FOOTER ===================================
 .footer {
-    position: relative;
-    overflow: hidden;
-    border-top: 15px solid $white;
+  position: relative;
+  overflow: hidden;
+  border-top: 15px solid $white;
 
-    #map {
-        min-height: 320px;
-        overflow: hidden;
-        position: relative;
-    }
+  #map {
+    min-height: 320px;
+    overflow: hidden;
+    position: relative;
+  }
 }
 
 .contacts {
-    background-color: $white;
-    padding-top: 50px;
-    text-align: center;
+  background-color: $white;
+  padding-top: 50px;
+  text-align: center;
 
-    @include p-y-50;
+  @include p-y-50;
 
-    >div {
-        @include p-x-15;
+  > div {
+    @include p-x-15;
+  }
+
+  .contacts_info {
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include vertical;
+
+    a {
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        color: $peach;
+      }
     }
-
-    .contacts_info {
-        font-size: 18px;
-        padding-left: 40px;
-        padding-right: 40px;
-
-        @include vertical;
-
-        a {
-            color: $black;
-            text-decoration: none;
-
-            &:hover {
-                color: $peach;
-            }
-        }
-    }
+  }
 }
 
 // social
 .social {
-    height: 65px;
-    text-align: center;
+  height: 65px;
+  text-align: center;
 
-    a {
-        line-height: 65px;
-        width: 40px;
-        height: 30px;
-        display: inline-block;
+  a {
+    line-height: 65px;
+    width: 40px;
+    height: 30px;
+    display: inline-block;
 
-        @include bg_contain;
+    @include bg_contain;
 
-        &.instagram {
-            background-image: url(../img/social/instagram.svg);
+    &.instagram {
+      background-image: url(../img/social/instagram.svg);
 
-            &:hover {
-                background-image: url(../img/social/instagram_h.svg);
-            }
-        }
-
-        &.vk {
-            background-image: url(../img/social/vk.svg);
-
-            &:hover {
-                background-image: url(../img/social/vk_h.svg);
-            }
-        }
-
-        &.facebook {
-            background-image: url(../img/social/facebook.svg);
-
-            &:hover {
-                background-image: url(../img/social/facebook_h.svg);
-            }
-        }
-
-        &.viber {
-            background-image: url(../img/social/viber.svg);
-
-            &:hover {
-                background-image: url(../img/social/viber_h.svg);
-            }
-        }
-
-        &.telegram {
-            background-image: url(../img/social/telegram.svg);
-
-            &:hover {
-                background-image: url(../img/social/telegram_h.svg);
-            }
-        }
+      &:hover {
+        background-image: url(../img/social/instagram_h.svg);
+      }
     }
+
+    &.vk {
+      background-image: url(../img/social/vk.svg);
+
+      &:hover {
+        background-image: url(../img/social/vk_h.svg);
+      }
+    }
+
+    &.facebook {
+      background-image: url(../img/social/facebook.svg);
+
+      &:hover {
+        background-image: url(../img/social/facebook_h.svg);
+      }
+    }
+
+    &.viber {
+      background-image: url(../img/social/viber.svg);
+
+      &:hover {
+        background-image: url(../img/social/viber_h.svg);
+      }
+    }
+
+    &.telegram {
+      background-image: url(../img/social/telegram.svg);
+
+      &:hover {
+        background-image: url(../img/social/telegram_h.svg);
+      }
+    }
+  }
 }
 
 .copyright {
-    height: 50px;
-    width: 100%;
-    line-height: 50px;
-    text-align: center;
-    background: $white;
-    font-size: 18px;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  background: $white;
+  font-size: 18px;
 }
 
 .dev {
-    height: 30px;
-    width: 100%;
-    line-height: 30px;
-    text-align: center;
-    background: $white;
-    font-size: 10px;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  background: $white;
+  font-size: 10px;
 
-    a {
-        color: $black;
+  a {
+    color: $black;
 
-        &:hover {
-            color: $peach;
-        }
+    &:hover {
+      color: $peach;
     }
+  }
 }
 
 // MARKERS ===================================
 .service_bl {
-    // span.class = first child of service_bl
-    .new,
-    .sale {
-        position: absolute;
-        top: 1px;
-        width: auto;
-        padding: 2px 5px;
-        text-align: center;
-        font-size: 14px;
-        color: #fff;
-    }
+  // span.class = first child of service_bl
+  .new,
+  .sale {
+    position: absolute;
+    top: 1px;
+    width: auto;
+    padding: 2px 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
 
-    .new {
-        background-color: #F62459;
-        left: 15px;
-    }
+  .new {
+    background-color: #F62459;
+    left: 15px;
+  }
 
-    .sale {
-        background-color: #0ED771;
-        left: 15px;
-    }
+  .sale {
+    background-color: #0ED771;
+    left: 15px;
+  }
 }
