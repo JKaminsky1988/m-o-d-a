@@ -1,3 +1,6 @@
+// body fade In
+
+
 // menu
 $(".navbar-nav li a").click(function(event) {
     if (!$(this).parent().hasClass('dropdown'))
@@ -47,3 +50,5 @@ $(window).scroll(function() {
         }
     });
 });
+
+// dynamic link
