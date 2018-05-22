@@ -11,7 +11,7 @@ gulp.task('js', function() {
             './app/js/jquery.min.js',
             './app/js/jquery.inputmask.bundle.min.js',
             './app/js/bootstrap.min.js',
-            './app/js/index.js',
+            './app/js/common.js',
             './app/js/form.js',
             './app/js/map.js',
             './app/js/jquery.bxslider.min.js',
