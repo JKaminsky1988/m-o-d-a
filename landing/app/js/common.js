@@ -12,8 +12,10 @@ $(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 555) {
             $('nav.navbar').addClass('sticky-top-nav');
+            $('body').addClass('menu_place');
         } else {
             $('nav.navbar').removeClass('sticky-top-nav');
+            $('body').removeClass('menu_place');
         }
     });
 });
@@ -51,4 +53,13 @@ $(window).scroll(function() {
     });
 });
 
-// dynamic link
+// dynamic link TOfolio TOprise
+$(document).ready(function() {
+    var hash = window.location.hash;
+    if (hash) {
+        $(hash).addClass('in');
+        $a = $($(this).attr('href'));
+        $('html,body').scrollTop() + 200;
+        return false;
+    }
+});
