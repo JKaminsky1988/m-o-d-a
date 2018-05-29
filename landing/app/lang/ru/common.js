@@ -9,7 +9,7 @@ module.exports = {
     localLangTo: 'ua',
 
     // titles ========================================
-    h1: 'Красивой быть мо<span class="d_letter">d</span>но',
+    h1: 'Красивой быть модно',
 
     // menu
     aboutLink: 'о нас',
