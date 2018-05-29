@@ -32,24 +32,25 @@
 }
 
 // COLORS
-@mixin bgBlack1 {
-  background: $black;
-  color: $peach;
-}
-
-@mixin bgBlack2 {
-  background: $black;
-  color: $pink;
-}
-
-@mixin bgPeach {
-  background: $peach;
+@mixin bgAqua {
+  background: $aqua;
   color: $white;
 }
 
+@mixin bgPink {
+  background: $pink;
+  color: $peach;
+}
+
+@mixin bg_linear_1 {
+  background: -webkit-linear-gradient(330deg, #FF5F6D, #FFC371);
+  background: -o-linear-gradient(330deg, #FF5F6D, #FFC371);
+  background: linear-gradient(120deg, #FF5F6D, #FFC371);
+}
+
+// fonts
 @mixin l-s-1 {
   letter-spacing: 1px;
-  font-family: $gogoia;
 }
 
 // BACKGROUNDS

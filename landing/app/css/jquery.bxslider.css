@@ -70,7 +70,7 @@ ul.bxslider {
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #272727;
+  background: #474747;
   text-indent: -9999px;
   display: block;
   width: 15px;
@@ -85,7 +85,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #d95d3b;
+  background: #FF5F6D;
 }
 
 .bx-wrapper .bx-pager-item,

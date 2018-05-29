@@ -18,10 +18,6 @@
     padding-right: 45px; }
   .txt_100:nth-child(even) > div {
     padding-left: 45px; }
-  .bold {
-    font-family: "montserratbold"; }
-  .bold_i {
-    font-family: "montserratbold_italic"; }
   h1,
   h2,
   h3 {
@@ -29,7 +25,7 @@
     margin-bottom: 30px; }
   h1,
   h2 {
-    font-size: 73px; }
+    font-size: 40px; }
   .nav_bl {
     height: 72px; }
   nav.navbar {
@@ -61,28 +57,13 @@
     width: 30%; }
   .bxslider .rewiev_txt {
     padding-top: 30px; }
-  .footer {
-    max-height: 450px; }
-    .footer .inner {
-      max-height: 450px; }
-    .footer #map {
-      overflow: hidden;
+  .footer .contacts {
+    padding-top: 50px; }
+    .footer .contacts > div {
+      float: right;
+      max-width: 570px;
       width: 100%;
-      height: 100%;
-      position: absolute !important;
-      z-index: 2;
-      top: 0px;
-      bottom: 0;
-      left: 0;
-      right: 0; }
-    .footer .contacts {
-      min-height: 450px;
-      z-index: 3; }
-      .footer .contacts .contacts_info {
-        display: block;
-        padding-top: 30px;
-        padding-left: 0;
-        padding-right: 0; } }
+      border-left: 1px solid #fff; } }
 
 @media (max-width: 995px) {
   .txt_100:nth-child(odd) > div {

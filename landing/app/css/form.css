@@ -3,17 +3,17 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.form_1 {
-  background-image: url(../img/bg/bg_2.png); }
-
+.form_1,
 .form_2 {
-  background-image: url(../img/bg/bg_3.png); }
+  background: -webkit-linear-gradient(330deg, #FF5F6D, #FFC371);
+  background: -o-linear-gradient(330deg, #FF5F6D, #FFC371);
+  background: linear-gradient(120deg, #FF5F6D, #FFC371); }
 
 .modal {
   padding-right: 0 !important; }
 
 .modal-content {
-  background-color: #262626; }
+  background-color: #009F7E; }
 
 .modal-header {
   border: none; }
@@ -29,7 +29,7 @@ button.close {
   background-size: contain; }
   button.close:hover {
     opacity: 1;
-    color: #febbab;
+    color: #FF5F6D;
     background-image: url(../img/cross-out_h.svg); }
 
 form > div {
@@ -58,13 +58,13 @@ form > div {
     background: none;
     outline: none;
     -moz-appearance: none;
-    color: #febbab;
+    color: #fff;
     border-width: 0 0 2px 0;
-    border-color: #febbab;
+    border-color: #fff;
     z-index: 2; }
     form > div input:focus,
     form > div textarea:focus {
-      border-color: #d95d3b; }
+      border-color: #FFC371; }
       form > div input:focus + label,
       form > div textarea:focus + label {
         bottom: auto;
@@ -74,7 +74,7 @@ form > div {
         opacity: 1;
         transition: .2s;
         width: auto;
-        color: #d95d3b; }
+        color: #FFC371; }
     form > div input:not(:empty) + label,
     form > div textarea:not(:empty) + label {
       top: -15px; }
@@ -87,13 +87,13 @@ form > div {
     padding-left: 10px;
     border-radius: 0; }
     form > div input::-webkit-input-placeholder {
-      color: #febbab;
+      color: #fff;
       font-size: 18px; }
     form > div input::-moz-placeholder {
-      color: #febbab;
+      color: #fff;
       font-size: 18px; }
     form > div input:-ms-input-placeholder {
-      color: #febbab;
+      color: #fff;
       font-size: 18px; }
     form > div input:focus {
       border-bottom-width: 2px;
@@ -110,15 +110,15 @@ form > div {
     max-height: 100px !important;
     min-height: 36px;
     border-radius: 0;
-    border-right: 2px solid #febbab;
+    border-right: 2px solid #fff;
     border-top: none;
     border-left: none;
     resize: none; }
     form > div textarea:-moz-placeholder {
-      color: #febbab;
+      color: #fff;
       font-size: 18px; }
     form > div textarea::-webkit-input-placeholder {
-      color: #febbab;
+      color: #fff;
       font-size: 18px; }
     form > div textarea:focus {
       box-shadow: none; }
@@ -130,6 +130,6 @@ form > div {
       width: 7px;
       background-color: transparent; }
     form > div textarea::-webkit-scrollbar-thumb {
-      background-color: #d95d3b; }
+      background-color: #FFC371; }
     form > div textarea::-webkit-scrollbar-corner {
       background-color: transparent; }
